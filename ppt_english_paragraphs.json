@@ -1,0 +1,770 @@
+{
+  "count": 439,
+  "unique": 191,
+  "items": [
+    {
+      "text": "X | LIPO Automation: Auto Cleaning Machine: Cavity & Core Short/Long Side Cleaning Tuning",
+      "sample_slide": 1
+    },
+    {
+      "text": "Gauge Intro / Tuning Steps",
+      "sample_slide": 1
+    },
+    {
+      "text": "Process Flow",
+      "sample_slide": 1
+    },
+    {
+      "text": "Auto Cleaning Machine",
+      "sample_slide": 1
+    },
+    {
+      "text": "Nozzle Alignment Block",
+      "sample_slide": 1
+    },
+    {
+      "text": "Step 3.Adjust the angle of the nozzle alignment block to 45°.",
+      "sample_slide": 1
+    },
+    {
+      "text": "Alignment Pin",
+      "sample_slide": 1
+    },
+    {
+      "text": "LSR Mold",
+      "sample_slide": 1
+    },
+    {
+      "text": "Step 2: By adjusting the position of the nozzle, the hole of the blowing nozzle can be inserted into the positioning PIN of the dummying block.",
+      "sample_slide": 1
+    },
+    {
+      "text": "Step 4. Adjust sheet metal cover position.Ensure it is parallel to the gauge",
+      "sample_slide": 1
+    },
+    {
+      "text": "Step 1: Place the gauge on the  lifting plate，lifting module lift up ",
+      "sample_slide": 1
+    },
+    {
+      "text": "X | LIPO Automation: Hook Assy w/Cavity Machine: Hook Insert Teach-in ",
+      "sample_slide": 2
+    },
+    {
+      "text": "HOOK NOOZLE",
+      "sample_slide": 2
+    },
+    {
+      "text": "1# Gauge",
+      "sample_slide": 2
+    },
+    {
+      "text": "1. The lower CCD takes pictures of the suction nozzle and the 1#gauge, and calculates the relative position between the gauge and the suction nozzle.",
+      "sample_slide": 2
+    },
+    {
+      "text": "2# Gauge",
+      "sample_slide": 2
+    },
+    {
+      "text": "Hook Insert Slot",
+      "sample_slide": 2
+    },
+    {
+      "text": "(Follow Actual Fixture Size)",
+      "sample_slide": 2
+    },
+    {
+      "text": "2. After the suction nozzle places 1# gauge onto the 2# gauge, the upper CCD takes a photo to determine the actual alignment position and the difference from the target position to obtain the point for hook insert ",
+      "sample_slide": 2
+    },
+    {
+      "text": "The position between the suction nozzle",
+      "sample_slide": 2
+    },
+    {
+      "text": "            and 1# gauge",
+      "sample_slide": 2
+    },
+    {
+      "text": "      The position between 1# gauge",
+      "sample_slide": 2
+    },
+    {
+      "text": "            and 2# gauge",
+      "sample_slide": 2
+    },
+    {
+      "text": "suction nozzle",
+      "sample_slide": 2
+    },
+    {
+      "text": "X | LIPO Automation: Hook Assy w/Cavity Machine: Pick Up From 2nd Positioning Platform",
+      "sample_slide": 3
+    },
+    {
+      "text": "Hook assy Machine",
+      "sample_slide": 3
+    },
+    {
+      "text": "Step 1: gauge placed on the secondary positioning platform.",
+      "sample_slide": 3
+    },
+    {
+      "text": "Step2: Manually move picking module to above the gauge and descend.",
+      "sample_slide": 3
+    },
+    {
+      "text": "A",
+      "sample_slide": 3
+    },
+    {
+      "text": "B",
+      "sample_slide": 3
+    },
+    {
+      "text": "0.05mm clearance",
+      "sample_slide": 3
+    },
+    {
+      "text": "Single side",
+      "sample_slide": 3
+    },
+    {
+      "text": "Section A-A",
+      "sample_slide": 3
+    },
+    {
+      "text": "Section B-B",
+      "sample_slide": 3
+    },
+    {
+      "text": "3.Lower and side CCD correction ",
+      "sample_slide": 3
+    },
+    {
+      "text": "and Hook angle inspection",
+      "sample_slide": 3
+    },
+    {
+      "text": "1. Pick up 1pcs Hook ",
+      "sample_slide": 3
+    },
+    {
+      "text": "4.Hook assemble into cavity",
+      "sample_slide": 3
+    },
+    {
+      "text": "5.Hook assembled X&Y direction inspection",
+      "sample_slide": 3
+    },
+    {
+      "text": "7.Fixture flow to next machine",
+      "sample_slide": 3
+    },
+    {
+      "text": "6.Hook assembled ",
+      "sample_slide": 3
+    },
+    {
+      "text": "Z-height inspection",
+      "sample_slide": 3
+    },
+    {
+      "text": "2.Transfer nozzle pick up 1pcs Hook and place them on secondary position platform",
+      "sample_slide": 3
+    },
+    {
+      "text": "3.Upper CCD position Cavity",
+      "sample_slide": 3
+    },
+    {
+      "text": "X | LIPO Automation: Hook Assy w/Cavity Machine: Fixture Unlock Module",
+      "sample_slide": 4
+    },
+    {
+      "text": "Step1：Place gauge on the  positioning platform",
+      "sample_slide": 4
+    },
+    {
+      "text": "Step2：Adjust the position of the unlock block",
+      "sample_slide": 4
+    },
+    {
+      "text": "0.02mm clearance",
+      "sample_slide": 4
+    },
+    {
+      "text": "Detail A",
+      "sample_slide": 4
+    },
+    {
+      "text": "Y datum",
+      "sample_slide": 4
+    },
+    {
+      "text": "Z datum",
+      "sample_slide": 4
+    },
+    {
+      "text": "Detail B",
+      "sample_slide": 4
+    },
+    {
+      "text": "0.3mm",
+      "sample_slide": 4
+    },
+    {
+      "text": "X | LIPO Automation: Hook Assy w/Cavity Machine: Hook Insert CCD Calibration & Teach In",
+      "sample_slide": 5
+    },
+    {
+      "text": "Gauge Info:",
+      "sample_slide": 5
+    },
+    {
+      "text": "Material: SUS304",
+      "sample_slide": 5
+    },
+    {
+      "text": "Surface treatment:无",
+      "sample_slide": 5
+    },
+    {
+      "text": "Alignment slot tolerance: ±0.02/mm",
+      "sample_slide": 5
+    },
+    {
+      "text": "1#hole",
+      "sample_slide": 5
+    },
+    {
+      "text": "Process",
+      "sample_slide": 5
+    },
+    {
+      "text": "1. Completed vision system debugging, place the calibration block on the attach point of upper CCD,  use upper CCD and locate Mark hole.",
+      "sample_slide": 5
+    },
+    {
+      "text": "2. Suction nozzle picks up Hook and use lower CCD to locate Hook.",
+      "sample_slide": 5
+    },
+    {
+      "text": "3. Lead the Hook to assemble into 1#Hole and repeat 5 times.",
+      "sample_slide": 5
+    },
+    {
+      "text": "4. Adjust the compensation value to achieve the assembly of 2# hole to 5# hole (each 5 times).",
+      "sample_slide": 5
+    },
+    {
+      "text": "5. Use assembly data of 1# hole for production.",
+      "sample_slide": 5
+    },
+    {
+      "text": "Note: ",
+      "sample_slide": 5
+    },
+    {
+      "text": "1.The surface height of the dummying block is consistent with surface height of actual production carrier.",
+      "sample_slide": 5
+    },
+    {
+      "text": "2.The position of 1# hole is identical to the position of the hole in the actual production carrier.",
+      "sample_slide": 5
+    },
+    {
+      "text": "3.The size of the Mark hole on the dummying block is the same as those on the actual production carrier.",
+      "sample_slide": 5
+    },
+    {
+      "text": "X | LIPO Automation: Hook Assy w/Cavity Machine: Hook Insert Z-height  ",
+      "sample_slide": 6
+    },
+    {
+      "text": "Hook Nominal Position",
+      "sample_slide": 6
+    },
+    {
+      "text": "Nozzle Calibration Position",
+      "sample_slide": 6
+    },
+    {
+      "text": "1mm",
+      "sample_slide": 6
+    },
+    {
+      "text": "Spring",
+      "sample_slide": 6
+    },
+    {
+      "text": "Step1：Place gauge on the positioning platform",
+      "sample_slide": 6
+    },
+    {
+      "text": "Step2：suction cup move to  gauge",
+      "sample_slide": 6
+    },
+    {
+      "text": "X | LIPO Automation: BG Assembly Machine: Secondary Position Platform",
+      "sample_slide": 7
+    },
+    {
+      "text": "BG assy Machine",
+      "sample_slide": 7
+    },
+    {
+      "text": "1. BG loading",
+      "sample_slide": 7
+    },
+    {
+      "text": "4. BG flip",
+      "sample_slide": 7
+    },
+    {
+      "text": "1. Cavity incoming and read RFID",
+      "sample_slide": 7
+    },
+    {
+      "text": "3. LSR CCD position",
+      "sample_slide": 7
+    },
+    {
+      "text": "4. BG Assy to LSR",
+      "sample_slide": 7
+    },
+    {
+      "text": "5. Height detection",
+      "sample_slide": 7
+    },
+    {
+      "text": "5. Secondary positioning and pick up BG &CCD position",
+      "sample_slide": 7
+    },
+    {
+      "text": "2. BG ionic wind",
+      "sample_slide": 7
+    },
+    {
+      "text": "1. Core incoming",
+      "sample_slide": 7
+    },
+    {
+      "text": "2.Cavity Move to Assembly position",
+      "sample_slide": 7
+    },
+    {
+      "text": "v",
+      "sample_slide": 7
+    },
+    {
+      "text": "4.Core jacking",
+      "sample_slide": 7
+    },
+    {
+      "text": "7. Fixture Move to jacking position",
+      "sample_slide": 7
+    },
+    {
+      "text": "8. Fixture Move to Core conveyor",
+      "sample_slide": 7
+    },
+    {
+      "text": "3. Scan BG code  ",
+      "sample_slide": 7
+    },
+    {
+      "text": "2. Core Measure temp",
+      "sample_slide": 7
+    },
+    {
+      "text": "3.  Flip Core",
+      "sample_slide": 7
+    },
+    {
+      "text": "6.  Assemble Core & Cavity",
+      "sample_slide": 7
+    },
+    {
+      "text": "Gauge Info: ",
+      "sample_slide": 7
+    },
+    {
+      "text": "Material: S136",
+      "sample_slide": 7
+    },
+    {
+      "text": "Surface treatment: / ",
+      "sample_slide": 7
+    },
+    {
+      "text": "Alignment slot tolerance: +0.05/- 0.05mm",
+      "sample_slide": 7
+    },
+    {
+      "text": "Step 1: Place gauge on the secondary positioning platform",
+      "sample_slide": 7
+    },
+    {
+      "text": "Step 2: Manually move place-down module to place-down position.",
+      "sample_slide": 7
+    },
+    {
+      "text": "Step 3: Descend Z-axis to align suction nozzle with gauge.",
+      "sample_slide": 7
+    },
+    {
+      "text": "Step 4: Record the current position as discharging position for secondary positioning platform.",
+      "sample_slide": 7
+    },
+    {
+      "text": "Step 1: Place gauge into positioning platform",
+      "sample_slide": 8
+    },
+    {
+      "text": "Step 2: After the cylinder is retracted, adjust the position of the clamping block so that it contacts the gauge and tightens the clamping block.",
+      "sample_slide": 8
+    },
+    {
+      "text": "0.1mm",
+      "sample_slide": 8
+    },
+    {
+      "text": "4x Clamp Block",
+      "sample_slide": 8
+    },
+    {
+      "text": "4x Clamp block contact with the gauge ",
+      "sample_slide": 8
+    },
+    {
+      "text": "Step 1: Place the gauge into secondary positioning platform and clamp",
+      "sample_slide": 9
+    },
+    {
+      "text": "Step 2: Manually move picking module to discharging  position.",
+      "sample_slide": 9
+    },
+    {
+      "text": "Step3: Descend Z-axis to align suction nozzle ",
+      "sample_slide": 9
+    },
+    {
+      "text": "with gauge.",
+      "sample_slide": 9
+    },
+    {
+      "text": "Step 4: Record the current position as picking position for secondary positioning platform.",
+      "sample_slide": 9
+    },
+    {
+      "text": "X | LIPO Automation: BG Assembly Machine: Assy Pressure Tuning",
+      "sample_slide": 10
+    },
+    {
+      "text": "0.2mm clearance",
+      "sample_slide": 10
+    },
+    {
+      "text": "H1",
+      "sample_slide": 10
+    },
+    {
+      "text": "H1=BG Height +Cavity Height",
+      "sample_slide": 10
+    },
+    {
+      "text": "X | LIPO Automation: BG Loading Machine: Secondary Position Platform",
+      "sample_slide": 11
+    },
+    {
+      "text": "BG Loading Machine",
+      "sample_slide": 11
+    },
+    {
+      "text": "Step 1: Place the gauge into fixture of the BG assembly machine and clamp it tightly。",
+      "sample_slide": 11
+    },
+    {
+      "text": "Step 2: The loading module moves to discharging  position.",
+      "sample_slide": 11
+    },
+    {
+      "text": "Step 4: Recording the current position, X-axis and Y-axis position should be offset by approximately 3mm towards the fixture's block and it is correct discharge position because there is a gap between products in the tray of BG loading.",
+      "sample_slide": 11
+    },
+    {
+      "text": "BG loading flow",
+      "sample_slide": 11
+    },
+    {
+      "text": "1.Robot moves to Tray",
+      "sample_slide": 11
+    },
+    {
+      "text": "2.Pick up BG",
+      "sample_slide": 11
+    },
+    {
+      "text": "3.Put product to ",
+      "sample_slide": 11
+    },
+    {
+      "text": "transfer platform",
+      "sample_slide": 11
+    },
+    {
+      "text": "Fixture flow",
+      "sample_slide": 11
+    },
+    {
+      "text": "1.fixture flow in",
+      "sample_slide": 11
+    },
+    {
+      "text": "2. fixture flip",
+      "sample_slide": 11
+    },
+    {
+      "text": "3. fixture flow out",
+      "sample_slide": 11
+    },
+    {
+      "text": "X | LIPO Automation: LIPO Injection Machine: Transferring Module",
+      "sample_slide": 12
+    },
+    {
+      "text": "LIPO Injection Machine",
+      "sample_slide": 12
+    },
+    {
+      "text": "Step 1: Place inspection fixture into loading platform",
+      "sample_slide": 12
+    },
+    {
+      "text": "Step 2: Align gripper with gripping position of inspection fixture in the XYZ directions and locate loading position in the XYZ directions.",
+      "sample_slide": 12
+    },
+    {
+      "text": "X",
+      "sample_slide": 12
+    },
+    {
+      "text": "Y",
+      "sample_slide": 12
+    },
+    {
+      "text": "Z",
+      "sample_slide": 12
+    },
+    {
+      "text": "X | LIPO Automation: LIPO Injection Machine: Injection Module",
+      "sample_slide": 13
+    },
+    {
+      "text": "pin",
+      "sample_slide": 13
+    },
+    {
+      "text": "Simulated Needle",
+      "sample_slide": 13
+    },
+    {
+      "text": "Step 1. Align inspection fixture with pin and place it on dispensing platform, inspect extended needle and install it on the upper cover board of dispensing machine.",
+      "sample_slide": 13
+    },
+    {
+      "text": "Step 2. Adjust lower dispensing platform and upper cover plate,  pin is aligned with hole position of inspection fixture in the XY directions, and locate dispensing position.",
+      "sample_slide": 13
+    },
+    {
+      "text": "Plug Insert Machine - Vibration Disk",
+      "sample_slide": 14
+    },
+    {
+      "text": "Step 1: Align inspection fixture with pin, place it on the positon of pickuping in the Vibaraton disk.",
+      "sample_slide": 14
+    },
+    {
+      "text": "0.05mm",
+      "sample_slide": 14
+    },
+    {
+      "text": " X | LIPO Automation: LIPO Gate Plug Insert Machine: Vibration Disk",
+      "sample_slide": 14
+    },
+    {
+      "text": "Plug Insert Machine - Gripper Module",
+      "sample_slide": 15
+    },
+    {
+      "text": "Step 1: Align inspection fixture with pin, place it on the positon of conveyor lifting.",
+      "sample_slide": 15
+    },
+    {
+      "text": "X方向",
+      "sample_slide": 15
+    },
+    {
+      "text": " X | LIPO Automation: LIPO Gate Plug Insert Machine: Gripper Module",
+      "sample_slide": 15
+    },
+    {
+      "text": "X | LIPO Automation: De-plug and De-Mold Machine: De-plug Tuning",
+      "sample_slide": 16
+    },
+    {
+      "text": "De-plug and De-Mold Machine",
+      "sample_slide": 16
+    },
+    {
+      "text": "0.5mm",
+      "sample_slide": 16
+    },
+    {
+      "text": "Step 1: Place the gauge on the conveyor lifting platform",
+      "sample_slide": 16
+    },
+    {
+      "text": "Step 2: After moving plug removal module manually,",
+      "sample_slide": 16
+    },
+    {
+      "text": " it moves to above the gauge and descends to the plug removal position. Adjust position of the gripper so that it can enter positioning slot.",
+      "sample_slide": 16
+    },
+    {
+      "text": "X | LIPO Automation: De-plug and De-Mold Machine: Pick-up Module",
+      "sample_slide": 17
+    },
+    {
+      "text": "Step 2: Align the suction disk with gripping position of inspection fixture in the XYZ directions and locate loading position in the XYZ directions.",
+      "sample_slide": 17
+    },
+    {
+      "text": "X | LIPO Automation: Groove De-gate Machine: Pick-Up/Place Down Module",
+      "sample_slide": 18
+    },
+    {
+      "text": "Groove De-gate Machine",
+      "sample_slide": 18
+    },
+    {
+      "text": "Step 1. Place gauge on the loading position.",
+      "sample_slide": 18
+    },
+    {
+      "text": "Step 2. Align the suction cup with gripping position of inspection fixture in the XYZ directions and locate loading position in the XYZ directions.",
+      "sample_slide": 18
+    },
+    {
+      "text": "X | LIPO Automation: Groove De-gate Machine: Height Detection Module Tuning",
+      "sample_slide": 19
+    },
+    {
+      "text": "Step 1. Place gauge on the flipping platform",
+      "sample_slide": 19
+    },
+    {
+      "text": "Step 2. Pin is aligned with hole position of high detection in the XY directions;",
+      "sample_slide": 19
+    },
+    {
+      "text": "Use a distance sensor to measure the high detection of several steps on inspection fixture to calibrate Z-axis value.",
+      "sample_slide": 19
+    },
+    {
+      "text": "X | LIPO Automation: Groove De-gate Machine: Vision Calibration ",
+      "sample_slide": 20
+    },
+    {
+      "text": "Step 2. The milling cutter mills nine round holes on the inspection fixture plate; then it moves to CCD, the calibration program performs calibration, generates a calibration file, and completes the calibration.",
+      "sample_slide": 20
+    },
+    {
+      "text": "Y方",
+      "sample_slide": 20
+    },
+    {
+      "text": "X | LIPO Automation: Groove De-gate Machine: Spindle Position Tuning",
+      "sample_slide": 21
+    },
+    {
+      "text": "Step 2. Align the pin with the spindle position, perform initial position of the spindle, and wait for the XY position of the milling cutter.",
+      "sample_slide": 21
+    },
+    {
+      "text": "X | LIPO Automation: Inlet & Outlet De-gate Machine: Pick-Up/Place Down Module",
+      "sample_slide": 22
+    },
+    {
+      "text": "Inlet & Outlet De-gate Machine",
+      "sample_slide": 22
+    },
+    {
+      "text": "X | LIPO Automation: Inlet & Outlet De-gate Machine: Height Detection Module Tuning",
+      "sample_slide": 23
+    },
+    {
+      "text": "X | LIPO Automation: Inlet & Outlet De-gate Machine: Spindle Position Tuning",
+      "sample_slide": 24
+    },
+    {
+      "text": "X | LIPO Automation: Inlet & Outlet De-gate Machine: Vision Calibration ",
+      "sample_slide": 25
+    },
+    {
+      "text": "X | LIPO Automation: BG Unloading Machine: Secondary Position Platform",
+      "sample_slide": 26
+    },
+    {
+      "text": "BG unloading Machine",
+      "sample_slide": 26
+    },
+    {
+      "text": "Tray flow",
+      "sample_slide": 26
+    },
+    {
+      "text": "1.Load empty tray",
+      "sample_slide": 26
+    },
+    {
+      "text": "2.Locate tray",
+      "sample_slide": 26
+    },
+    {
+      "text": "3.Transfer tray",
+      "sample_slide": 26
+    },
+    {
+      "text": "4.Unload full tray",
+      "sample_slide": 26
+    },
+    {
+      "text": "1.Vacuum cup pick up BG",
+      "sample_slide": 26
+    },
+    {
+      "text": "2. Place BG into tray",
+      "sample_slide": 26
+    },
+    {
+      "text": "Step 1: Place the gauge into fixture and clamp it tightly。",
+      "sample_slide": 26
+    },
+    {
+      "text": "Step 2: The unloading module moves to loading position.",
+      "sample_slide": 26
+    },
+    {
+      "text": "Step3: Gauge Descend Z-axis to align suction nozzle with gauge.",
+      "sample_slide": 26
+    },
+    {
+      "text": "Step4: Record the current position as picking position for BG uploading platform.",
+      "sample_slide": 26
+    }
+  ]
+}

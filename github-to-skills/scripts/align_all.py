@@ -7,8 +7,8 @@ from pathlib import Path
 
 
 def main() -> int:
-    suite = Path(__file__).resolve().parents[2] / "github-to-skills" / "scripts" / "github_skills_suite.py"
-    cmd = [sys.executable, str(suite), "list", *sys.argv[1:]]
+    suite = Path(__file__).resolve().parent / "github_skills_suite.py"
+    cmd = [sys.executable, str(suite), "evolve-align", *sys.argv[1:]]
     return subprocess.run(cmd).returncode
 
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Viral Content Breakdown"
+  short_description: "拆解抖音/小红书爆款内容并输出证据化 JSON"
+  default_prompt: "粘贴抖音或小红书链接，生成包含脚本、钩子、爆点原因和改写思路的证据化拆解报告。"

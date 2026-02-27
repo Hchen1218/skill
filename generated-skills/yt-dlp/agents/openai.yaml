@@ -1,0 +1,4 @@
+interface:
+  display_name: "yt-dlp"
+  short_description: "GitHub 仓库自动生成的技能封装"
+  default_prompt: "调用 yt-dlp 的能力完成当前任务，并给出可执行命令。"

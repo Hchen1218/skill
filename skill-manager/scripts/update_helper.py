@@ -1,39 +1,19 @@
-import shutil
-import os
-import sys
-import datetime
+#!/usr/bin/env python3
+from __future__ import annotations
 
-def backup_skill(skill_path):
-    """
-    Backs up SKILL.md to SKILL.md.bak.<timestamp>
-    """
-    if not os.path.exists(skill_path):
-        return False, "Skill path does not exist"
-        
-    skill_md = os.path.join(skill_path, "SKILL.md")
-    if not os.path.exists(skill_md):
-        return False, "SKILL.md not found"
-        
-    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-    backup_name = f"SKILL.md.bak.{timestamp}"
-    backup_path = os.path.join(skill_path, backup_name)
-    
-    try:
-        shutil.copy2(skill_md, backup_path)
-        return True, backup_path
-    except Exception as e:
-        return False, str(e)
+import subprocess
+import sys
+from pathlib import Path
+
+
+def main() -> int:
+    if len(sys.argv) < 2:
+        print("Usage: python update_helper.py <skill_dir>", file=sys.stderr)
+        return 1
+    suite = Path(__file__).resolve().parents[2] / "github-to-skills" / "scripts" / "github_skills_suite.py"
+    cmd = [sys.executable, str(suite), "backup", *sys.argv[1:]]
+    return subprocess.run(cmd).returncode
+
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Usage: python update_helper.py <skill_dir>")
-        sys.exit(1)
-        
-    skill_dir = sys.argv[1]
-    success, msg = backup_skill(skill_dir)
-    
-    if success:
-        print(f"Backup created: {msg}")
-    else:
-        print(f"Backup failed: {msg}")
-        sys.exit(1)
+    raise SystemExit(main())

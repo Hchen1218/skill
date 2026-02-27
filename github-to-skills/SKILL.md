@@ -1,56 +1,97 @@
 ---
 name: github-to-skills
-description: Automated factory for converting GitHub repositories into specialized AI skills. Use this skill when the user provides a GitHub URL and wants to "package", "wrap", or "create a skill" from it. It automatically fetches repository details, latest commit hashes, and generates a standardized skill structure with enhanced metadata suitable for lifecycle management.
+description: Unified GitHub skill suite for creating, managing, and evolving skills. Use when users want to convert a GitHub repo into a skill, list/check/delete local skills, or persist conversation learnings into evolution.json and stitch them back into SKILL.md.
 license: MIT
 ---
 
-# GitHub to Skills Factory
+# GitHub Skills Suite
 
-This skill automates the conversion of GitHub repositories into fully functional AI skills.
+这是融合版单一 Skill，合并了：
+- `github-to-skills`（GitHub 仓库转 Skill）
+- `skill-manager`（盘点/检查更新/删除/备份）
+- `skill-evolution-manager`（经验沉淀、缝合、全量对齐）
 
-## Core Functionality
+## 统一入口
 
-1. **Analysis**: Fetches repository metadata (Description, README, Latest Commit Hash).
-2. **Scaffolding**: Creates a standardized skill directory structure.
-3. **Metadata Injection**: Generates `SKILL.md` with extended frontmatter (tracking source, version, hash) for future automated management.
-4. **Wrapper Generation**: Creates a `scripts/wrapper.py` (or similar) to interface with the tool.
+```bash
+python3 scripts/github_skills_suite.py --help
+```
 
-## Usage
+## 核心子命令
 
-**Trigger**: `/GitHub-to-skills <github_url>` or "Package this repo into a skill: <url>"
+### 1) 从 GitHub 生成 Skill
+```bash
+python3 scripts/github_skills_suite.py create <github_url> --output-dir <skills_dir>
+```
 
-### Required Metadata Schema
+### 2) 列出本地技能
+```bash
+python3 scripts/github_skills_suite.py list --skills-root <skills_root>
+```
 
-Every skill created by this factory MUST include the following extended YAML frontmatter in its `SKILL.md`. This is critical for the `skill-manager` to function later.
+### 3) 检查 GitHub 技能更新
+```bash
+python3 scripts/github_skills_suite.py check --skills-root <skills_root>
+```
+
+### 4) 删除某个技能
+```bash
+python3 scripts/github_skills_suite.py delete <skill_name> --skills-root <skills_root>
+```
+
+### 5) 备份某个技能的 SKILL.md
+```bash
+python3 scripts/github_skills_suite.py backup <skill_dir>
+```
+
+### 6) 经验沉淀（evolution.json 增量合并）
+```bash
+python3 scripts/github_skills_suite.py evolve-merge <skill_dir> --json '{"preferences":["..."],"fixes":["..."]}'
+```
+
+### 7) 缝合经验到 SKILL.md
+```bash
+python3 scripts/github_skills_suite.py evolve-stitch <skill_dir>
+```
+
+### 8) 全量对齐（批量缝合）
+```bash
+python3 scripts/github_skills_suite.py evolve-align --skills-root <skills_root>
+```
+
+## 兼容脚本（旧入口仍可用）
+- `scripts/fetch_github_info.py`
+- `scripts/create_github_skill.py`
+- `scripts/list_skills.py`
+- `scripts/scan_and_check.py`
+- `scripts/delete_skill.py`
+- `scripts/update_helper.py`
+- `scripts/merge_evolution.py`
+- `scripts/smart_stitch.py`
+- `scripts/align_all.py`
+
+## 统一元数据约定
+
+生成的 Skill 使用 Codex 兼容 frontmatter：
 
 ```yaml
 ---
-name: <kebab-case-repo-name>
-description: <concise-description-for-agent-triggering>
-# EXTENDED METADATA (MANDATORY)
-github_url: <original-repo-url>
-github_hash: <latest-commit-hash-at-time-of-creation>
-version: <tag-or-0.1.0>
-created_at: <ISO-8601-date>
-entry_point: scripts/wrapper.py # or main script
-dependencies: # List main dependencies if known, e.g., ["yt-dlp", "ffmpeg"]
+name: <kebab-case-name>
+description: <trigger description>
+metadata:
+  source:
+    github_url: <repo_url>
+    github_hash: <latest_hash>
+    version: 0.1.0
+    created_at: <ISO-8601>
+  entry_point: scripts/wrapper.py
+  dependencies:
+    - <dependency>
 ---
 ```
 
-## Workflow
+## 触发建议
+- 用户说“把这个 GitHub 仓库封装成 skill” -> `create`
+- 用户说“查一下我哪些 skill 过期了” -> `check`
+- 用户说“复盘并把经验写回 skill” -> `evolve-merge` + `evolve-stitch`
 
-1. **Fetch Info**: The agent first runs `scripts/fetch_github_info.py` to get the raw data from the repo.
-2. **Plan**: The agent analyzes the README to understand how to invoke the tool (CLI args, Python API, etc.).
-3. **Generate**: The agent uses the `skill-creator` patterns to write the `SKILL.md` and wrapper scripts, ensuring the **extended metadata** is present.
-4. **Verify**: Checks if the commit hash was correctly captured.
-
-## Resources
-
-- `scripts/fetch_github_info.py`: Utility to scrape/API fetch repo details (README, Hash, Tags).
-- `scripts/create_github_skill.py`: Orchestrator to scaffold the folder and write the initial files.
-
-## Best Practices for Generated Skills
-
-- **Isolation**: The generated skill should install its own dependencies (e.g., in a venv or via `uv`/`pip`) if possible, or clearly state them.
-- **Progressive Disclosure**: Do not dump the entire repo into the skill. Only include the necessary wrapper code and reference the original repo for deep dives.
-- **Idempotency**: The `github_hash` field allows the future `skill-manager` to check `if remote_hash != local_hash` to trigger updates.

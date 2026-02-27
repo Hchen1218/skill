@@ -1,0 +1,6959 @@
+[
+  {
+    "slide": 1,
+    "shape": "0",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "0",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 1,
+    "shape": "0",
+    "p": 0,
+    "r": 6,
+    "text": "Auto Cleaning Machine: Cavity & Core Short/Long Side Cleaning Tuning",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "1",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "1",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "1",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "2",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "2",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "7",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "7",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "13",
+    "p": 0,
+    "r": 0,
+    "text": "Auto Cleaning Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "16.1",
+    "p": 0,
+    "r": 0,
+    "text": "Nozzle Alignment Bloc",
+    "size": 8.0,
+    "bold": true
+  },
+  {
+    "slide": 1,
+    "shape": "16.1",
+    "p": 0,
+    "r": 1,
+    "text": "k",
+    "size": 8.0,
+    "bold": true
+  },
+  {
+    "slide": 1,
+    "shape": "17",
+    "p": 0,
+    "r": 0,
+    "text": "Step ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "17",
+    "p": 0,
+    "r": 1,
+    "text": "3.Adjust the angle of the nozzle alignment block to 45°.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "18",
+    "p": 0,
+    "r": 0,
+    "text": "A",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "18",
+    "p": 0,
+    "r": 1,
+    "text": "lignment ",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "18",
+    "p": 0,
+    "r": 2,
+    "text": "P",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "18",
+    "p": 0,
+    "r": 3,
+    "text": "in",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "19",
+    "p": 0,
+    "r": 0,
+    "text": "LSR Mold",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "20",
+    "p": 0,
+    "r": 0,
+    "text": "Step",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "20",
+    "p": 0,
+    "r": 4,
+    "text": "By adjusting the position of the nozzle, the hole of the blowing nozzle can be inserted into the positioning PIN of the dummying block.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "23",
+    "p": 0,
+    "r": 0,
+    "text": "Step 4. ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "23",
+    "p": 0,
+    "r": 1,
+    "text": "Adjust",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "23",
+    "p": 0,
+    "r": 2,
+    "text": " s",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "23",
+    "p": 0,
+    "r": 3,
+    "text": "heet metal cover position.Ensure it is parallel to the gauge",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "26",
+    "p": 0,
+    "r": 0,
+    "text": "Step",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "26",
+    "p": 0,
+    "r": 3,
+    "text": "Place the gauge on the  lifting plate，",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 1,
+    "shape": "26",
+    "p": 0,
+    "r": 4,
+    "text": "lifting module lift up ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 2,
+    "shape": "0",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 2,
+    "shape": "0",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 2,
+    "shape": "0",
+    "p": 0,
+    "r": 6,
+    "text": "Hook Assy w/Cavity Machine: Hook Insert Teach-in ",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 2,
+    "shape": "2",
+    "p": 0,
+    "r": 0,
+    "text": "HOOK",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 2,
+    "shape": "2",
+    "p": 0,
+    "r": 2,
+    "text": "NOOZLE",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 2,
+    "shape": "4",
+    "p": 0,
+    "r": 2,
+    "text": "Gauge",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 2,
+    "shape": "5",
+    "p": 0,
+    "r": 2,
+    "text": "The lower CCD takes pictures of the suction nozzle and the 1#gauge, and calculates the relative position between the gauge and the suction nozzle.",
+    "size": 9.0,
+    "bold": true
+  },
+  {
+    "slide": 2,
+    "shape": "6",
+    "p": 0,
+    "r": 2,
+    "text": "Gauge",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 2,
+    "shape": "13",
+    "p": 0,
+    "r": 0,
+    "text": "Hook",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 2,
+    "shape": "13",
+    "p": 0,
+    "r": 2,
+    "text": "Insert",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 2,
+    "shape": "13",
+    "p": 0,
+    "r": 4,
+    "text": "Slot",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 2,
+    "shape": "13",
+    "p": 1,
+    "r": 0,
+    "text": "(Follow",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 2,
+    "shape": "13",
+    "p": 1,
+    "r": 2,
+    "text": "Actual",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 2,
+    "shape": "13",
+    "p": 1,
+    "r": 4,
+    "text": "Fixture",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 2,
+    "shape": "13",
+    "p": 1,
+    "r": 6,
+    "text": "Size",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 2,
+    "shape": "15",
+    "p": 0,
+    "r": 2,
+    "text": "After the suction nozzle places 1# gauge onto the 2# gauge, the upper CCD takes a photo to determine the actual alignment position and the difference from the target position to obtain the point for hook insert",
+    "size": 9.0,
+    "bold": true
+  },
+  {
+    "slide": 2,
+    "shape": "15",
+    "p": 2,
+    "r": 0,
+    "text": "The position between the suction nozzle",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 2,
+    "shape": "15",
+    "p": 3,
+    "r": 0,
+    "text": "            and 1# gauge",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 2,
+    "shape": "15",
+    "p": 4,
+    "r": 0,
+    "text": "      The position between 1# gauge",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 2,
+    "shape": "15",
+    "p": 5,
+    "r": 0,
+    "text": "            and 2# gauge",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 2,
+    "shape": "15",
+    "p": 6,
+    "r": 0,
+    "text": "The position between the suction nozzle",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 2,
+    "shape": "15",
+    "p": 7,
+    "r": 0,
+    "text": "            and 2# gauge",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 2,
+    "shape": "25",
+    "p": 0,
+    "r": 2,
+    "text": "Gauge",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 2,
+    "shape": "27",
+    "p": 0,
+    "r": 0,
+    "text": "suction nozzle",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "0",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "0",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 3,
+    "shape": "0",
+    "p": 0,
+    "r": 6,
+    "text": "Hook Assy w/Cavity Machine: Pick Up From 2nd Positioning Platform",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "1",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "1",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "1",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "2",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "2",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "6",
+    "p": 0,
+    "r": 0,
+    "text": "Hook",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "6",
+    "p": 0,
+    "r": 1,
+    "text": " assy Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "11",
+    "p": 0,
+    "r": 0,
+    "text": "Step 1: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "11",
+    "p": 0,
+    "r": 1,
+    "text": "gauge placed on the secondary positioning platform.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "14",
+    "p": 0,
+    "r": 0,
+    "text": "Step",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "14",
+    "p": 0,
+    "r": 2,
+    "text": "Manually move picking module to above the gauge and descend.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "18",
+    "p": 0,
+    "r": 0,
+    "text": "A",
+    "size": 12.0,
+    "bold": false
+  },
+  {
+    "slide": 3,
+    "shape": "19",
+    "p": 0,
+    "r": 0,
+    "text": "A",
+    "size": 12.0,
+    "bold": false
+  },
+  {
+    "slide": 3,
+    "shape": "23",
+    "p": 0,
+    "r": 0,
+    "text": "B",
+    "size": 12.0,
+    "bold": false
+  },
+  {
+    "slide": 3,
+    "shape": "24",
+    "p": 0,
+    "r": 0,
+    "text": "B",
+    "size": 12.0,
+    "bold": false
+  },
+  {
+    "slide": 3,
+    "shape": "25.2",
+    "p": 0,
+    "r": 0,
+    "text": "0.05mm",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 3,
+    "shape": "25.2",
+    "p": 0,
+    "r": 2,
+    "text": "clearance",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 3,
+    "shape": "25.2",
+    "p": 1,
+    "r": 0,
+    "text": "Single",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "25.2",
+    "p": 1,
+    "r": 2,
+    "text": "side",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "25.8",
+    "p": 0,
+    "r": 0,
+    "text": "0.05mm",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 3,
+    "shape": "25.8",
+    "p": 0,
+    "r": 2,
+    "text": "clearance",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 3,
+    "shape": "25.8",
+    "p": 1,
+    "r": 0,
+    "text": "Single",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "25.8",
+    "p": 1,
+    "r": 2,
+    "text": "side",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "25.9",
+    "p": 0,
+    "r": 0,
+    "text": "Section",
+    "size": 12.0,
+    "bold": true
+  },
+  {
+    "slide": 3,
+    "shape": "25.9",
+    "p": 0,
+    "r": 2,
+    "text": "A-A",
+    "size": 12.0,
+    "bold": true
+  },
+  {
+    "slide": 3,
+    "shape": "26.4",
+    "p": 0,
+    "r": 0,
+    "text": "0.05mm",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 3,
+    "shape": "26.4",
+    "p": 0,
+    "r": 2,
+    "text": "clearance",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 3,
+    "shape": "26.4",
+    "p": 1,
+    "r": 0,
+    "text": "Single",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "26.4",
+    "p": 1,
+    "r": 2,
+    "text": "side",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "26.9",
+    "p": 0,
+    "r": 0,
+    "text": "0.05mm",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 3,
+    "shape": "26.9",
+    "p": 0,
+    "r": 2,
+    "text": "clearance",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 3,
+    "shape": "26.9",
+    "p": 1,
+    "r": 0,
+    "text": "Single",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "26.9",
+    "p": 1,
+    "r": 2,
+    "text": "side",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "27",
+    "p": 0,
+    "r": 0,
+    "text": "Section",
+    "size": 12.0,
+    "bold": true
+  },
+  {
+    "slide": 3,
+    "shape": "27",
+    "p": 0,
+    "r": 2,
+    "text": "B",
+    "size": 12.0,
+    "bold": true
+  },
+  {
+    "slide": 3,
+    "shape": "27",
+    "p": 0,
+    "r": 3,
+    "text": "-B",
+    "size": 12.0,
+    "bold": true
+  },
+  {
+    "slide": 3,
+    "shape": "28.6",
+    "p": 0,
+    "r": 1,
+    "text": "Lower and side CCD correction ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "28.6",
+    "p": 1,
+    "r": 0,
+    "text": "and Hook angle inspection",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "28.7",
+    "p": 0,
+    "r": 1,
+    "text": " Pick up 1pcs Hook ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "28.8",
+    "p": 0,
+    "r": 1,
+    "text": "Hook assemble into cavity",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "28.9",
+    "p": 0,
+    "r": 1,
+    "text": "Hook assembled X&Y direction inspection",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "28.11",
+    "p": 0,
+    "r": 1,
+    "text": "Fixture flow to next machine",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "28.12",
+    "p": 0,
+    "r": 1,
+    "text": "Hook assembled ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "28.12",
+    "p": 1,
+    "r": 0,
+    "text": "Z-height inspection",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "28.13",
+    "p": 0,
+    "r": 1,
+    "text": "Transfer nozzle pic",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "28.13",
+    "p": 0,
+    "r": 2,
+    "text": "k",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "28.13",
+    "p": 0,
+    "r": 3,
+    "text": " up ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "28.13",
+    "p": 0,
+    "r": 4,
+    "text": "1pcs",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "28.13",
+    "p": 0,
+    "r": 5,
+    "text": " Hook and pla",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "28.13",
+    "p": 0,
+    "r": 6,
+    "text": "ce ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "28.13",
+    "p": 0,
+    "r": 7,
+    "text": "them on secondary position platform",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 3,
+    "shape": "28.21",
+    "p": 0,
+    "r": 1,
+    "text": "Upper CCD position Cavity",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "0",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "0",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 4,
+    "shape": "0",
+    "p": 0,
+    "r": 6,
+    "text": "Hook Assy w/Cavity Machine: Fixture Unlock Module",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "1",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "1",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "1",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "2",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "2",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "6",
+    "p": 0,
+    "r": 0,
+    "text": "Hook",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "6",
+    "p": 0,
+    "r": 1,
+    "text": " assy Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "8.6",
+    "p": 0,
+    "r": 1,
+    "text": "Lower and side CCD correction ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "8.6",
+    "p": 1,
+    "r": 0,
+    "text": "and Hook angle inspection",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "8.7",
+    "p": 0,
+    "r": 1,
+    "text": " Pick up 1pcs Hook ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "8.8",
+    "p": 0,
+    "r": 1,
+    "text": "Hook assemble into cavity",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "8.9",
+    "p": 0,
+    "r": 1,
+    "text": "Hook assembled X&Y direction inspection",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "8.11",
+    "p": 0,
+    "r": 1,
+    "text": "Fixture flow to next machine",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "8.12",
+    "p": 0,
+    "r": 1,
+    "text": "Hook assembled ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "8.12",
+    "p": 1,
+    "r": 0,
+    "text": "Z-height inspection",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "8.13",
+    "p": 0,
+    "r": 1,
+    "text": "Transfer nozzle pic",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "8.13",
+    "p": 0,
+    "r": 2,
+    "text": "k",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "8.13",
+    "p": 0,
+    "r": 3,
+    "text": " up ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "8.13",
+    "p": 0,
+    "r": 4,
+    "text": "1pcs",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "8.13",
+    "p": 0,
+    "r": 5,
+    "text": " Hook and pla",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "8.13",
+    "p": 0,
+    "r": 6,
+    "text": "ce ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "8.13",
+    "p": 0,
+    "r": 7,
+    "text": "them on secondary position platform",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "8.21",
+    "p": 0,
+    "r": 1,
+    "text": "Upper CCD position Cavity",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "12",
+    "p": 0,
+    "r": 0,
+    "text": "Step1",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "12",
+    "p": 0,
+    "r": 2,
+    "text": "P",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "12",
+    "p": 0,
+    "r": 3,
+    "text": "lace gauge on the  positioning platform",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "13",
+    "p": 0,
+    "r": 0,
+    "text": "Step",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "13",
+    "p": 0,
+    "r": 3,
+    "text": "Adjust the position of the unlock block",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "18",
+    "p": 0,
+    "r": 0,
+    "text": "0.02mm",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 4,
+    "shape": "18",
+    "p": 0,
+    "r": 2,
+    "text": "clearance",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 4,
+    "shape": "18",
+    "p": 1,
+    "r": 0,
+    "text": "Single",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "18",
+    "p": 1,
+    "r": 2,
+    "text": "side",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 4,
+    "shape": "19.2",
+    "p": 0,
+    "r": 0,
+    "text": "A",
+    "size": 12.0,
+    "bold": false
+  },
+  {
+    "slide": 4,
+    "shape": "19.5",
+    "p": 0,
+    "r": 0,
+    "text": "B",
+    "size": 12.0,
+    "bold": false
+  },
+  {
+    "slide": 4,
+    "shape": "20",
+    "p": 0,
+    "r": 0,
+    "text": "Detail",
+    "size": 9.0,
+    "bold": true
+  },
+  {
+    "slide": 4,
+    "shape": "20",
+    "p": 0,
+    "r": 2,
+    "text": "A",
+    "size": 12.0,
+    "bold": true
+  },
+  {
+    "slide": 4,
+    "shape": "21.3",
+    "p": 0,
+    "r": 0,
+    "text": "Y datum",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 4,
+    "shape": "21.5",
+    "p": 0,
+    "r": 0,
+    "text": "Z datum",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 4,
+    "shape": "21.6",
+    "p": 0,
+    "r": 0,
+    "text": "Detail",
+    "size": 9.0,
+    "bold": true
+  },
+  {
+    "slide": 4,
+    "shape": "21.6",
+    "p": 0,
+    "r": 2,
+    "text": "B",
+    "size": 12.0,
+    "bold": true
+  },
+  {
+    "slide": 4,
+    "shape": "21.11",
+    "p": 0,
+    "r": 0,
+    "text": "0.3mm",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 5,
+    "shape": "0",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "0",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 5,
+    "shape": "0",
+    "p": 0,
+    "r": 6,
+    "text": "Hook Assy w/Cavity Machine: Hook Insert CCD Calibration & Teach In",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "1",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "1",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "1",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "2",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "2",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "6",
+    "p": 0,
+    "r": 0,
+    "text": "Hook",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "6",
+    "p": 0,
+    "r": 1,
+    "text": " assy Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "8.6",
+    "p": 0,
+    "r": 1,
+    "text": "Lower and side CCD correction ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "8.6",
+    "p": 1,
+    "r": 0,
+    "text": "and Hook angle inspection",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "8.7",
+    "p": 0,
+    "r": 1,
+    "text": " Pick up 1pcs Hook ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "8.8",
+    "p": 0,
+    "r": 1,
+    "text": "Hook assemble into cavity",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "8.9",
+    "p": 0,
+    "r": 1,
+    "text": "Hook assembled X&Y direction inspection",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "8.11",
+    "p": 0,
+    "r": 1,
+    "text": "Fixture flow to next machine",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "8.12",
+    "p": 0,
+    "r": 1,
+    "text": "Hook assembled ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "8.12",
+    "p": 1,
+    "r": 0,
+    "text": "Z-height inspection",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "8.13",
+    "p": 0,
+    "r": 1,
+    "text": "Transfer nozzle pic",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "8.13",
+    "p": 0,
+    "r": 2,
+    "text": "k",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "8.13",
+    "p": 0,
+    "r": 3,
+    "text": " up ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "8.13",
+    "p": 0,
+    "r": 4,
+    "text": "1pcs",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "8.13",
+    "p": 0,
+    "r": 5,
+    "text": " Hook and pla",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "8.13",
+    "p": 0,
+    "r": 6,
+    "text": "ce ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "8.13",
+    "p": 0,
+    "r": 7,
+    "text": "them on secondary position platform",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "8.21",
+    "p": 0,
+    "r": 1,
+    "text": "Upper CCD position Cavity",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "12",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "12",
+    "p": 0,
+    "r": 2,
+    "text": "Info:",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "12",
+    "p": 1,
+    "r": 0,
+    "text": "Material: SUS304",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 5,
+    "shape": "12",
+    "p": 2,
+    "r": 0,
+    "text": "Surface treatment:",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 5,
+    "shape": "12",
+    "p": 3,
+    "r": 0,
+    "text": "Alignment",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 5,
+    "shape": "12",
+    "p": 3,
+    "r": 2,
+    "text": "slot",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 5,
+    "shape": "12",
+    "p": 3,
+    "r": 4,
+    "text": "tolerance: ±0.02/mm",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 5,
+    "shape": "16",
+    "p": 0,
+    "r": 0,
+    "text": "0.3mm",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 5,
+    "shape": "18",
+    "p": 0,
+    "r": 0,
+    "text": "1#hole",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 5,
+    "shape": "22",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 8.0,
+    "bold": false
+  },
+  {
+    "slide": 5,
+    "shape": "22",
+    "p": 1,
+    "r": 0,
+    "text": "1. Completed vision system debugging, place the calibration block on the attach point of upper CCD,  use upper CCD and locate Mark hole.",
+    "size": 8.0,
+    "bold": false
+  },
+  {
+    "slide": 5,
+    "shape": "22",
+    "p": 2,
+    "r": 0,
+    "text": "2. Suction nozzle picks up Hook and use lower CCD to locate Hook.",
+    "size": 8.0,
+    "bold": false
+  },
+  {
+    "slide": 5,
+    "shape": "22",
+    "p": 3,
+    "r": 0,
+    "text": "3. Lead the Hook to assemble into 1#Hole and repeat 5 times.",
+    "size": 8.0,
+    "bold": false
+  },
+  {
+    "slide": 5,
+    "shape": "22",
+    "p": 4,
+    "r": 0,
+    "text": "4. Adjust the compensation value to achieve the assembly of 2# hole to 5# hole (each 5 times).",
+    "size": 8.0,
+    "bold": false
+  },
+  {
+    "slide": 5,
+    "shape": "22",
+    "p": 5,
+    "r": 0,
+    "text": "5. Use assembly data of 1# hole for production.",
+    "size": 8.0,
+    "bold": false
+  },
+  {
+    "slide": 5,
+    "shape": "22",
+    "p": 7,
+    "r": 0,
+    "text": "Note: ",
+    "size": 8.0,
+    "bold": false
+  },
+  {
+    "slide": 5,
+    "shape": "22",
+    "p": 8,
+    "r": 0,
+    "text": "1.The surface height of the dummying block is consistent with surface height of actual production carrier.",
+    "size": 8.0,
+    "bold": false
+  },
+  {
+    "slide": 5,
+    "shape": "22",
+    "p": 9,
+    "r": 0,
+    "text": "2.The position of 1# hole is identical to the position of the hole in the actual production carrier.",
+    "size": 8.0,
+    "bold": false
+  },
+  {
+    "slide": 5,
+    "shape": "22",
+    "p": 10,
+    "r": 0,
+    "text": "3.The size of the Mark hole on the dummying block is the same as those on the actual production carrier.",
+    "size": 8.0,
+    "bold": false
+  },
+  {
+    "slide": 6,
+    "shape": "1",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "1",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 6,
+    "shape": "1",
+    "p": 0,
+    "r": 6,
+    "text": "Hook Assy w/Cavity Machine: Hook Insert Z-height  ",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "2",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "2",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "2",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "3",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "3",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "7",
+    "p": 0,
+    "r": 0,
+    "text": "Hook",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "7",
+    "p": 0,
+    "r": 1,
+    "text": " assy Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "9.6",
+    "p": 0,
+    "r": 1,
+    "text": "Lower and side CCD correction ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "9.6",
+    "p": 1,
+    "r": 0,
+    "text": "and Hook angle inspection",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "9.7",
+    "p": 0,
+    "r": 1,
+    "text": " Pick up 1pcs Hook ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "9.8",
+    "p": 0,
+    "r": 1,
+    "text": "Hook assemble into cavity",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "9.9",
+    "p": 0,
+    "r": 1,
+    "text": "Hook assembled X&Y direction inspection",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "9.11",
+    "p": 0,
+    "r": 1,
+    "text": "Fixture flow to next machine",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "9.12",
+    "p": 0,
+    "r": 1,
+    "text": "Hook assembled ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "9.12",
+    "p": 1,
+    "r": 0,
+    "text": "Z-height inspection",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "9.13",
+    "p": 0,
+    "r": 1,
+    "text": "Transfer nozzle pic",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "9.13",
+    "p": 0,
+    "r": 2,
+    "text": "k",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "9.13",
+    "p": 0,
+    "r": 3,
+    "text": " up ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "9.13",
+    "p": 0,
+    "r": 4,
+    "text": "1pcs",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "9.13",
+    "p": 0,
+    "r": 5,
+    "text": " Hook and pla",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "9.13",
+    "p": 0,
+    "r": 6,
+    "text": "ce ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "9.13",
+    "p": 0,
+    "r": 7,
+    "text": "them on secondary position platform",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "9.21",
+    "p": 0,
+    "r": 1,
+    "text": "Upper CCD position Cavity",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "11.2",
+    "p": 0,
+    "r": 0,
+    "text": "Hook",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "11.2",
+    "p": 0,
+    "r": 2,
+    "text": "Nominal",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "11.2",
+    "p": 0,
+    "r": 4,
+    "text": "Position",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "11.4",
+    "p": 0,
+    "r": 0,
+    "text": "Nozzle",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "11.4",
+    "p": 0,
+    "r": 2,
+    "text": "Calibration",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "11.4",
+    "p": 0,
+    "r": 4,
+    "text": "Position",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "11.6",
+    "p": 0,
+    "r": 0,
+    "text": "1mm",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "11.8",
+    "p": 0,
+    "r": 0,
+    "text": "Spring",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "13",
+    "p": 0,
+    "r": 0,
+    "text": "Step1",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "13",
+    "p": 0,
+    "r": 2,
+    "text": "P",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "13",
+    "p": 0,
+    "r": 3,
+    "text": "lace gauge on the positioning platform",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "14",
+    "p": 0,
+    "r": 0,
+    "text": "Step",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 6,
+    "shape": "14",
+    "p": 0,
+    "r": 3,
+    "text": "suction cup move to  gauge",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "0",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "0",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 7,
+    "shape": "0",
+    "p": 0,
+    "r": 6,
+    "text": "BG Assembly",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "0",
+    "p": 0,
+    "r": 7,
+    "text": " Machine: Secondary Position Platform",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "1",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "1",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "1",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "2",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "2",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "8",
+    "p": 0,
+    "r": 0,
+    "text": "BG assy Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.0",
+    "p": 0,
+    "r": 1,
+    "text": "BG loading",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.1",
+    "p": 0,
+    "r": 1,
+    "text": "BG ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.1",
+    "p": 0,
+    "r": 2,
+    "text": "flip",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.3",
+    "p": 0,
+    "r": 2,
+    "text": "Cavity incoming and read ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.3",
+    "p": 0,
+    "r": 3,
+    "text": "RFID",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.4",
+    "p": 0,
+    "r": 1,
+    "text": "LSR CCD position",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.5",
+    "p": 0,
+    "r": 0,
+    "text": "4. BG Assy to LSR",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.6",
+    "p": 0,
+    "r": 1,
+    "text": "Height ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.6",
+    "p": 0,
+    "r": 2,
+    "text": "detection",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.7",
+    "p": 0,
+    "r": 1,
+    "text": "Secondary positioning and pick up BG",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.7",
+    "p": 0,
+    "r": 3,
+    "text": "&CCD position",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.10",
+    "p": 0,
+    "r": 0,
+    "text": "2. BG ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.10",
+    "p": 0,
+    "r": 1,
+    "text": "ionic wind",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.12",
+    "p": 0,
+    "r": 0,
+    "text": "1. Core incoming",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.15",
+    "p": 0,
+    "r": 0,
+    "text": "2.Cavity Move to Assembly position",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.17",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.18",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.20",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.36",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.38",
+    "p": 0,
+    "r": 1,
+    "text": ".Core jacking",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.43",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.47",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.54",
+    "p": 0,
+    "r": 0,
+    "text": "7. Fixture Move to jacking position",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.58",
+    "p": 0,
+    "r": 0,
+    "text": "8. Fixture Move to Core conveyor",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.64",
+    "p": 0,
+    "r": 0,
+    "text": "3. Scan BG code  ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.65",
+    "p": 0,
+    "r": 1,
+    "text": "Core Measure temp",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.66",
+    "p": 0,
+    "r": 0,
+    "text": "3.  F",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.66",
+    "p": 0,
+    "r": 1,
+    "text": "lip Core",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "9.67",
+    "p": 0,
+    "r": 1,
+    "text": "Assemble Core & Cavity",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "11",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "11",
+    "p": 0,
+    "r": 2,
+    "text": "Info: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "11",
+    "p": 1,
+    "r": 0,
+    "text": "Material: S136",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 7,
+    "shape": "11",
+    "p": 2,
+    "r": 0,
+    "text": "Surface treatment: ",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 7,
+    "shape": "11",
+    "p": 3,
+    "r": 0,
+    "text": "Alignment",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 7,
+    "shape": "11",
+    "p": 3,
+    "r": 2,
+    "text": "slot",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 7,
+    "shape": "11",
+    "p": 3,
+    "r": 4,
+    "text": "tolerance: +0.05/- 0.05mm",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 7,
+    "shape": "12",
+    "p": 0,
+    "r": 0,
+    "text": "Step 1: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "12",
+    "p": 0,
+    "r": 1,
+    "text": "Place gauge on the secondary positioning platform",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "13",
+    "p": 0,
+    "r": 0,
+    "text": "Step ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "13",
+    "p": 0,
+    "r": 2,
+    "text": "Manually move place-down module to place-down",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "13",
+    "p": 0,
+    "r": 3,
+    "text": " position.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "14",
+    "p": 0,
+    "r": 0,
+    "text": "Step 3: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "14",
+    "p": 0,
+    "r": 1,
+    "text": "Descend Z-axis to align suction nozzle with gauge.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "15",
+    "p": 0,
+    "r": 0,
+    "text": "Step 4: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 7,
+    "shape": "15",
+    "p": 0,
+    "r": 1,
+    "text": "Record the current position as discharging position for secondary positioning platform.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "1",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "1",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 8,
+    "shape": "1",
+    "p": 0,
+    "r": 6,
+    "text": "BG Assembly",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "1",
+    "p": 0,
+    "r": 7,
+    "text": " Machine: Secondary Position Platform",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "2",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "2",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "2",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "3",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "3",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "9",
+    "p": 0,
+    "r": 0,
+    "text": "BG assy Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.0",
+    "p": 0,
+    "r": 1,
+    "text": "BG loading",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.1",
+    "p": 0,
+    "r": 1,
+    "text": "BG ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.1",
+    "p": 0,
+    "r": 2,
+    "text": "flip",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.3",
+    "p": 0,
+    "r": 2,
+    "text": "Cavity incoming and read ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.3",
+    "p": 0,
+    "r": 3,
+    "text": "RFID",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.4",
+    "p": 0,
+    "r": 1,
+    "text": "LSR CCD position",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.5",
+    "p": 0,
+    "r": 0,
+    "text": "4. BG Assy to LSR",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.6",
+    "p": 0,
+    "r": 1,
+    "text": "Height ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.6",
+    "p": 0,
+    "r": 2,
+    "text": "detection",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.7",
+    "p": 0,
+    "r": 1,
+    "text": "Secondary positioning and pick up BG",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.7",
+    "p": 0,
+    "r": 3,
+    "text": "&CCD position",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.10",
+    "p": 0,
+    "r": 0,
+    "text": "2. BG ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.10",
+    "p": 0,
+    "r": 1,
+    "text": "ionic wind",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.12",
+    "p": 0,
+    "r": 0,
+    "text": "1. Core incoming",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.15",
+    "p": 0,
+    "r": 0,
+    "text": "2.Cavity Move to Assembly position",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.17",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.18",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.20",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.36",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.38",
+    "p": 0,
+    "r": 1,
+    "text": ".Core jacking",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.43",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.47",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.54",
+    "p": 0,
+    "r": 0,
+    "text": "7. Fixture Move to jacking position",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.58",
+    "p": 0,
+    "r": 0,
+    "text": "8. Fixture Move to Core conveyor",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.64",
+    "p": 0,
+    "r": 0,
+    "text": "3. Scan BG code  ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.65",
+    "p": 0,
+    "r": 1,
+    "text": "Core Measure temp",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.66",
+    "p": 0,
+    "r": 0,
+    "text": "3.  F",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.66",
+    "p": 0,
+    "r": 1,
+    "text": "lip Core",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "10.67",
+    "p": 0,
+    "r": 1,
+    "text": "Assemble Core & Cavity",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "12",
+    "p": 0,
+    "r": 0,
+    "text": "Step 1: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "12",
+    "p": 0,
+    "r": 1,
+    "text": "Place gauge into positioning platform",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "13",
+    "p": 0,
+    "r": 0,
+    "text": "Step ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "13",
+    "p": 0,
+    "r": 2,
+    "text": "After the cylinder is retracted, adjust the position of the clamping block so that it contacts the gauge and tightens the clamping block.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "19",
+    "p": 0,
+    "r": 0,
+    "text": "0.1mm",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "23",
+    "p": 0,
+    "r": 0,
+    "text": "0.1mm",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "25",
+    "p": 0,
+    "r": 0,
+    "text": "4x",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "25",
+    "p": 0,
+    "r": 2,
+    "text": "Clamp",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "25",
+    "p": 0,
+    "r": 4,
+    "text": "Block",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "27",
+    "p": 0,
+    "r": 0,
+    "text": "4x",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "27",
+    "p": 0,
+    "r": 2,
+    "text": "Clamp",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "27",
+    "p": 0,
+    "r": 4,
+    "text": "block",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "27",
+    "p": 0,
+    "r": 6,
+    "text": "contact",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "27",
+    "p": 0,
+    "r": 8,
+    "text": "with",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 8,
+    "shape": "27",
+    "p": 0,
+    "r": 10,
+    "text": "the gauge",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "1",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "1",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 9,
+    "shape": "1",
+    "p": 0,
+    "r": 6,
+    "text": "BG Assembly",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "1",
+    "p": 0,
+    "r": 7,
+    "text": " Machine: Secondary Position Platform",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "2",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "2",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "2",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "3",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "3",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "9",
+    "p": 0,
+    "r": 0,
+    "text": "BG assy Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.0",
+    "p": 0,
+    "r": 1,
+    "text": "BG loading",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.1",
+    "p": 0,
+    "r": 1,
+    "text": "BG ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.1",
+    "p": 0,
+    "r": 2,
+    "text": "flip",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.3",
+    "p": 0,
+    "r": 2,
+    "text": "Cavity incoming and read ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.3",
+    "p": 0,
+    "r": 3,
+    "text": "RFID",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.4",
+    "p": 0,
+    "r": 1,
+    "text": "LSR CCD position",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.5",
+    "p": 0,
+    "r": 0,
+    "text": "4. BG Assy to LSR",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.6",
+    "p": 0,
+    "r": 1,
+    "text": "Height ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.6",
+    "p": 0,
+    "r": 2,
+    "text": "detection",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.7",
+    "p": 0,
+    "r": 1,
+    "text": "Secondary positioning and pick up BG",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.7",
+    "p": 0,
+    "r": 3,
+    "text": "&CCD position",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.10",
+    "p": 0,
+    "r": 0,
+    "text": "2. BG ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.10",
+    "p": 0,
+    "r": 1,
+    "text": "ionic wind",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.12",
+    "p": 0,
+    "r": 0,
+    "text": "1. Core incoming",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.15",
+    "p": 0,
+    "r": 0,
+    "text": "2.Cavity Move to Assembly position",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.17",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.18",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.20",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.36",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.38",
+    "p": 0,
+    "r": 1,
+    "text": ".Core jacking",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.43",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.47",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.54",
+    "p": 0,
+    "r": 0,
+    "text": "7. Fixture Move to jacking position",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.58",
+    "p": 0,
+    "r": 0,
+    "text": "8. Fixture Move to Core conveyor",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.64",
+    "p": 0,
+    "r": 0,
+    "text": "3. Scan BG code  ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.65",
+    "p": 0,
+    "r": 1,
+    "text": "Core Measure temp",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.66",
+    "p": 0,
+    "r": 0,
+    "text": "3.  F",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.66",
+    "p": 0,
+    "r": 1,
+    "text": "lip Core",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "10.67",
+    "p": 0,
+    "r": 1,
+    "text": "Assemble Core & Cavity",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "12",
+    "p": 0,
+    "r": 0,
+    "text": "Step 1: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "12",
+    "p": 0,
+    "r": 1,
+    "text": "Place the gauge into secondary positioning platform and clamp",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "13",
+    "p": 0,
+    "r": 0,
+    "text": "Step ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "13",
+    "p": 0,
+    "r": 2,
+    "text": "Manually move picking module ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "13",
+    "p": 0,
+    "r": 3,
+    "text": "to discharging  position.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "15",
+    "p": 0,
+    "r": 0,
+    "text": "Step",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "15",
+    "p": 0,
+    "r": 2,
+    "text": "Descend Z-axis to align suction nozzle ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "15",
+    "p": 1,
+    "r": 0,
+    "text": "with gauge.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "16",
+    "p": 0,
+    "r": 0,
+    "text": "Step 4: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 9,
+    "shape": "16",
+    "p": 0,
+    "r": 1,
+    "text": "Record the current position as picking position for secondary positioning platform.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "1",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "1",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 10,
+    "shape": "1",
+    "p": 0,
+    "r": 6,
+    "text": "BG Assembly",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "1",
+    "p": 0,
+    "r": 7,
+    "text": " Machine: ",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "1",
+    "p": 0,
+    "r": 8,
+    "text": "Assy Pressure Tuning",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "2",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "2",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "2",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "3",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "3",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "9",
+    "p": 0,
+    "r": 0,
+    "text": "BG assy Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.0",
+    "p": 0,
+    "r": 1,
+    "text": "BG loading",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.1",
+    "p": 0,
+    "r": 1,
+    "text": "BG ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.1",
+    "p": 0,
+    "r": 2,
+    "text": "flip",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.3",
+    "p": 0,
+    "r": 2,
+    "text": "Cavity incoming and read ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.3",
+    "p": 0,
+    "r": 3,
+    "text": "RFID",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.4",
+    "p": 0,
+    "r": 1,
+    "text": "LSR CCD position",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.5",
+    "p": 0,
+    "r": 0,
+    "text": "4. BG Assy to LSR",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.6",
+    "p": 0,
+    "r": 1,
+    "text": "Height ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.6",
+    "p": 0,
+    "r": 2,
+    "text": "detection",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.7",
+    "p": 0,
+    "r": 1,
+    "text": "Secondary positioning and pick up BG",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.7",
+    "p": 0,
+    "r": 3,
+    "text": "&CCD position",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.10",
+    "p": 0,
+    "r": 0,
+    "text": "2. BG ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.10",
+    "p": 0,
+    "r": 1,
+    "text": "ionic wind",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.12",
+    "p": 0,
+    "r": 0,
+    "text": "1. Core incoming",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.15",
+    "p": 0,
+    "r": 0,
+    "text": "2.Cavity Move to Assembly position",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.17",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.18",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.20",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.36",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.38",
+    "p": 0,
+    "r": 1,
+    "text": ".Core jacking",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.43",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.47",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.54",
+    "p": 0,
+    "r": 0,
+    "text": "7. Fixture Move to jacking position",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.58",
+    "p": 0,
+    "r": 0,
+    "text": "8. Fixture Move to Core conveyor",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.64",
+    "p": 0,
+    "r": 0,
+    "text": "3. Scan BG code  ",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.65",
+    "p": 0,
+    "r": 1,
+    "text": "Core Measure temp",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.66",
+    "p": 0,
+    "r": 0,
+    "text": "3.  F",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.66",
+    "p": 0,
+    "r": 1,
+    "text": "lip Core",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "10.67",
+    "p": 0,
+    "r": 1,
+    "text": "Assemble Core & Cavity",
+    "size": 5.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "12",
+    "p": 0,
+    "r": 0,
+    "text": "Step 1: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "12",
+    "p": 0,
+    "r": 1,
+    "text": "Place the gauge into secondary positioning platform and clamp",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "13",
+    "p": 0,
+    "r": 0,
+    "text": "Step ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "13",
+    "p": 0,
+    "r": 2,
+    "text": "Manually move picking module ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "13",
+    "p": 0,
+    "r": 3,
+    "text": "to discharging  position.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "14",
+    "p": 0,
+    "r": 0,
+    "text": "Step",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "14",
+    "p": 0,
+    "r": 2,
+    "text": "Descend Z-axis to align suction nozzle ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "14",
+    "p": 1,
+    "r": 0,
+    "text": "with gauge.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "15",
+    "p": 0,
+    "r": 0,
+    "text": "Step 4: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "15",
+    "p": 0,
+    "r": 1,
+    "text": "Record the current position as picking position for secondary positioning platform.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "20",
+    "p": 0,
+    "r": 0,
+    "text": "0.2mm",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "20",
+    "p": 0,
+    "r": 2,
+    "text": "clearance",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "21",
+    "p": 0,
+    "r": 0,
+    "text": "Detail",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "21",
+    "p": 0,
+    "r": 2,
+    "text": "A",
+    "size": 12.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "26",
+    "p": 0,
+    "r": 0,
+    "text": "H",
+    "size": 12.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "27",
+    "p": 0,
+    "r": 0,
+    "text": "H",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "27",
+    "p": 0,
+    "r": 2,
+    "text": "=BG",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "27",
+    "p": 0,
+    "r": 4,
+    "text": "Height",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "27",
+    "p": 0,
+    "r": 6,
+    "text": "+Cavity",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "27",
+    "p": 0,
+    "r": 8,
+    "text": "Height",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 10,
+    "shape": "31",
+    "p": 0,
+    "r": 0,
+    "text": "A",
+    "size": 12.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "5",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "5",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 11,
+    "shape": "5",
+    "p": 0,
+    "r": 6,
+    "text": "BG Loading Machine: Secondary Position Platform",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "6",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "6",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "6",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "7",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "7",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "11",
+    "p": 0,
+    "r": 0,
+    "text": "BG ",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "11",
+    "p": 0,
+    "r": 1,
+    "text": "Loading",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "11",
+    "p": 0,
+    "r": 2,
+    "text": " Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "12",
+    "p": 0,
+    "r": 0,
+    "text": "Step 1: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "12",
+    "p": 0,
+    "r": 1,
+    "text": "Place the gauge into fixture of the BG assembly machine and clamp it tightly。",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "13",
+    "p": 0,
+    "r": 0,
+    "text": "Step ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "13",
+    "p": 0,
+    "r": 2,
+    "text": "The loading module moves to discharging  position.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "14",
+    "p": 0,
+    "r": 0,
+    "text": "Step 3: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "14",
+    "p": 0,
+    "r": 1,
+    "text": "Descend Z-axis to align suction nozzle with gauge.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "15",
+    "p": 0,
+    "r": 0,
+    "text": "Step ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "15",
+    "p": 0,
+    "r": 2,
+    "text": "Recording the current position, X-axis and Y-axis position should be offset by approximately 3mm towards the fixture's block and it is correct discharge position because there is a gap between products in the tray of BG loading.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "20.0",
+    "p": 0,
+    "r": 0,
+    "text": "BG loading flow",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "20.1",
+    "p": 0,
+    "r": 1,
+    "text": "Robot moves to Tray",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "20.2",
+    "p": 0,
+    "r": 2,
+    "text": "Pick up BG",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "20.3",
+    "p": 0,
+    "r": 2,
+    "text": "Put product to ",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "20.3",
+    "p": 1,
+    "r": 0,
+    "text": "transfer platform",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "20.7",
+    "p": 0,
+    "r": 0,
+    "text": "Fixture flow",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "20.14",
+    "p": 0,
+    "r": 1,
+    "text": "fixture flow in",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "20.15",
+    "p": 0,
+    "r": 3,
+    "text": "fixture flip",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 11,
+    "shape": "20.18",
+    "p": 0,
+    "r": 3,
+    "text": "fixture flow out",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "1",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "1",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 12,
+    "shape": "1",
+    "p": 0,
+    "r": 6,
+    "text": "LIPO Injection Machine: Transferring Module",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "2",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "2",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "2",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "3",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "3",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "7",
+    "p": 0,
+    "r": 0,
+    "text": "LIPO Injection",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "7",
+    "p": 0,
+    "r": 1,
+    "text": " Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "12",
+    "p": 0,
+    "r": 0,
+    "text": "Step 1: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "12",
+    "p": 0,
+    "r": 1,
+    "text": "Place ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "12",
+    "p": 0,
+    "r": 2,
+    "text": "inspection fixture into loading platform",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "13",
+    "p": 0,
+    "r": 0,
+    "text": "Step 2: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "13",
+    "p": 0,
+    "r": 1,
+    "text": "Align gripper with gripping position of inspection fixture in the XYZ directions and locate loading position in the XYZ directions.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "16",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "17",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "18",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "19",
+    "p": 0,
+    "r": 0,
+    "text": "Y",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "20",
+    "p": 0,
+    "r": 0,
+    "text": "Y",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "23",
+    "p": 0,
+    "r": 0,
+    "text": "Y",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "24",
+    "p": 0,
+    "r": 0,
+    "text": "Y",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "27",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "28",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "35",
+    "p": 0,
+    "r": 0,
+    "text": "Z",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "42",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 12,
+    "shape": "43",
+    "p": 0,
+    "r": 0,
+    "text": "Y",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 13,
+    "shape": "0",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 13,
+    "shape": "0",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 13,
+    "shape": "0",
+    "p": 0,
+    "r": 6,
+    "text": "LIPO Injection Machine: Injection Module",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 13,
+    "shape": "1",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 13,
+    "shape": "1",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 13,
+    "shape": "1",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 13,
+    "shape": "2",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 13,
+    "shape": "2",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 13,
+    "shape": "6",
+    "p": 0,
+    "r": 0,
+    "text": "LIPO Injection",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 13,
+    "shape": "6",
+    "p": 0,
+    "r": 1,
+    "text": " Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 13,
+    "shape": "12",
+    "p": 0,
+    "r": 0,
+    "text": "pin",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 13,
+    "shape": "13",
+    "p": 0,
+    "r": 0,
+    "text": "pin",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 13,
+    "shape": "19",
+    "p": 0,
+    "r": 0,
+    "text": "Simulated Needle",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 13,
+    "shape": "20",
+    "p": 0,
+    "r": 0,
+    "text": "pin",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 13,
+    "shape": "21",
+    "p": 0,
+    "r": 0,
+    "text": "pin",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 13,
+    "shape": "42",
+    "p": 0,
+    "r": 0,
+    "text": "Step 1",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 13,
+    "shape": "42",
+    "p": 0,
+    "r": 2,
+    "text": "Align inspection fixture with pin and place it on dispensing platform, inspect extended needle and install it on the upper cover board of dispensing machine.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 13,
+    "shape": "43",
+    "p": 0,
+    "r": 0,
+    "text": "Step 2",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 13,
+    "shape": "43",
+    "p": 0,
+    "r": 2,
+    "text": "Adjust lower dispensing platform and upper cover plate,  pin is aligned with hole position of inspection fixture in the XY directions, and locate dispensing position.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 13,
+    "shape": "44",
+    "p": 0,
+    "r": 0,
+    "text": "Simulated Needle",
+    "size": 8.0,
+    "bold": null
+  },
+  {
+    "slide": 14,
+    "shape": "7",
+    "p": 0,
+    "r": 0,
+    "text": "Plug Insert Machine ",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 14,
+    "shape": "7",
+    "p": 0,
+    "r": 3,
+    "text": "Vibration Disk",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 14,
+    "shape": "8",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 14,
+    "shape": "8",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 14,
+    "shape": "9",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 14,
+    "shape": "9",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 14,
+    "shape": "9",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 14,
+    "shape": "12",
+    "p": 0,
+    "r": 0,
+    "text": "S",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 14,
+    "shape": "12",
+    "p": 0,
+    "r": 1,
+    "text": "tep 1: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 14,
+    "shape": "12",
+    "p": 0,
+    "r": 2,
+    "text": "Align inspection fixture with pin, place it on the positon of pickuping in the ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 14,
+    "shape": "12",
+    "p": 0,
+    "r": 3,
+    "text": "Vibaraton disk.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 14,
+    "shape": "13",
+    "p": 0,
+    "r": 0,
+    "text": "Step 2: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 14,
+    "shape": "13",
+    "p": 0,
+    "r": 1,
+    "text": "Align gripper with gripping position of inspection fixture in the XYZ directions and locate loading position in the XYZ directions.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 14,
+    "shape": "21",
+    "p": 0,
+    "r": 0,
+    "text": "0.02mm",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 14,
+    "shape": "21",
+    "p": 0,
+    "r": 2,
+    "text": "clearance",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 14,
+    "shape": "21",
+    "p": 1,
+    "r": 0,
+    "text": "Single",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 14,
+    "shape": "21",
+    "p": 1,
+    "r": 2,
+    "text": "side",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 14,
+    "shape": "25",
+    "p": 0,
+    "r": 0,
+    "text": "0.05mm",
+    "size": 10.0,
+    "bold": false
+  },
+  {
+    "slide": 14,
+    "shape": "28",
+    "p": 0,
+    "r": 0,
+    "text": " X ",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 14,
+    "shape": "28",
+    "p": 0,
+    "r": 2,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 14,
+    "shape": "28",
+    "p": 0,
+    "r": 5,
+    "text": "LIPO Gate Plug Insert Machine: Vibration Disk",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 15,
+    "shape": "4",
+    "p": 0,
+    "r": 0,
+    "text": "Plug Insert Machine ",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 15,
+    "shape": "4",
+    "p": 0,
+    "r": 3,
+    "text": "Gripper",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 15,
+    "shape": "4",
+    "p": 0,
+    "r": 5,
+    "text": "Module",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 15,
+    "shape": "5",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 15,
+    "shape": "5",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 15,
+    "shape": "6",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 15,
+    "shape": "6",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 15,
+    "shape": "6",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 15,
+    "shape": "9",
+    "p": 0,
+    "r": 0,
+    "text": "Step 1: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 15,
+    "shape": "9",
+    "p": 0,
+    "r": 1,
+    "text": "Align inspection fixture with pin, place it on the positon of conveyor lifting.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 15,
+    "shape": "10",
+    "p": 0,
+    "r": 0,
+    "text": "Step 2: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 15,
+    "shape": "10",
+    "p": 0,
+    "r": 1,
+    "text": "Align gripper with gripping position of inspection fixture in the XYZ directions and locate loading position in the XYZ directions.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 15,
+    "shape": "12",
+    "p": 0,
+    "r": 0,
+    "text": "pin",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 15,
+    "shape": "15",
+    "p": 0,
+    "r": 0,
+    "text": "pin",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 15,
+    "shape": "24",
+    "p": 0,
+    "r": 0,
+    "text": "Y",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 15,
+    "shape": "25",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 15,
+    "shape": "31",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 15,
+    "shape": "33",
+    "p": 0,
+    "r": 0,
+    "text": "Y",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 15,
+    "shape": "36",
+    "p": 0,
+    "r": 0,
+    "text": "Z",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 15,
+    "shape": "47",
+    "p": 0,
+    "r": 0,
+    "text": " X ",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 15,
+    "shape": "47",
+    "p": 0,
+    "r": 2,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 15,
+    "shape": "47",
+    "p": 0,
+    "r": 5,
+    "text": "LIPO Gate Plug Insert Machine: Gripper Module",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 16,
+    "shape": "0",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 16,
+    "shape": "0",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 16,
+    "shape": "0",
+    "p": 0,
+    "r": 6,
+    "text": "De-plug and De-Mold ",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 16,
+    "shape": "0",
+    "p": 0,
+    "r": 7,
+    "text": "Machine: ",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 16,
+    "shape": "0",
+    "p": 0,
+    "r": 8,
+    "text": "De-plug Tuning",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 16,
+    "shape": "1",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 16,
+    "shape": "1",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 16,
+    "shape": "5",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 16,
+    "shape": "5",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 16,
+    "shape": "5",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 16,
+    "shape": "9",
+    "p": 0,
+    "r": 0,
+    "text": "De-plug and De-Mold Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 16,
+    "shape": "13.1",
+    "p": 0,
+    "r": 0,
+    "text": "0.5mm",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 16,
+    "shape": "13.4",
+    "p": 0,
+    "r": 0,
+    "text": "0.5mm",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 16,
+    "shape": "23",
+    "p": 0,
+    "r": 0,
+    "text": "Step 1: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 16,
+    "shape": "23",
+    "p": 0,
+    "r": 1,
+    "text": "Place the gauge on the conveyor lifting platform",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 16,
+    "shape": "24",
+    "p": 0,
+    "r": 0,
+    "text": "Step 2: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 16,
+    "shape": "24",
+    "p": 0,
+    "r": 1,
+    "text": "After moving p",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 16,
+    "shape": "24",
+    "p": 0,
+    "r": 2,
+    "text": "lug removal module",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 16,
+    "shape": "24",
+    "p": 0,
+    "r": 3,
+    "text": " manually,",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 16,
+    "shape": "24",
+    "p": 1,
+    "r": 0,
+    "text": " it moves to above the gauge and descends to the plug removal position. Adjust position of the gripper so that it can enter positioning slot.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 17,
+    "shape": "0",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 17,
+    "shape": "0",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 17,
+    "shape": "0",
+    "p": 0,
+    "r": 6,
+    "text": "De-plug and De-Mold ",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 17,
+    "shape": "0",
+    "p": 0,
+    "r": 7,
+    "text": "Machine: Pick",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 17,
+    "shape": "0",
+    "p": 0,
+    "r": 8,
+    "text": "-up Module",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 17,
+    "shape": "1",
+    "p": 0,
+    "r": 0,
+    "text": "De-plug and De-Mold Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 17,
+    "shape": "2",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 17,
+    "shape": "2",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 17,
+    "shape": "3",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 17,
+    "shape": "3",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 17,
+    "shape": "3",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 17,
+    "shape": "9",
+    "p": 0,
+    "r": 2,
+    "text": "5mm",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 17,
+    "shape": "22",
+    "p": 0,
+    "r": 0,
+    "text": "Step 1: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 17,
+    "shape": "22",
+    "p": 0,
+    "r": 1,
+    "text": "Place ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 17,
+    "shape": "22",
+    "p": 0,
+    "r": 2,
+    "text": "inspection fixture into loading platform",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 17,
+    "shape": "23",
+    "p": 0,
+    "r": 0,
+    "text": "Step 2: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 17,
+    "shape": "23",
+    "p": 0,
+    "r": 1,
+    "text": "Align the suction disk with gripping position of inspection fixture in the XYZ directions and locate loading position in the XYZ directions.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 18,
+    "shape": "0",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 18,
+    "shape": "0",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 18,
+    "shape": "0",
+    "p": 0,
+    "r": 6,
+    "text": "Groove De-gate Machine: ",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 18,
+    "shape": "0",
+    "p": 0,
+    "r": 7,
+    "text": "Pick-Up/Place Down Module",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 18,
+    "shape": "3",
+    "p": 0,
+    "r": 0,
+    "text": "Groove De-gate Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 18,
+    "shape": "4",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 18,
+    "shape": "4",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 18,
+    "shape": "4",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 18,
+    "shape": "5",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 18,
+    "shape": "5",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 18,
+    "shape": "8",
+    "p": 0,
+    "r": 0,
+    "text": "Step 1",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 18,
+    "shape": "8",
+    "p": 0,
+    "r": 2,
+    "text": "Place gauge on the loading position.",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 18,
+    "shape": "9",
+    "p": 0,
+    "r": 0,
+    "text": "Step 2",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 18,
+    "shape": "9",
+    "p": 0,
+    "r": 2,
+    "text": "Align the suction cup with gripping position of inspection fixture in the XYZ directions and locate loading position in the XYZ directions.",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 18,
+    "shape": "16",
+    "p": 0,
+    "r": 2,
+    "text": "5mm",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 19,
+    "shape": "0",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 19,
+    "shape": "0",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 19,
+    "shape": "0",
+    "p": 0,
+    "r": 6,
+    "text": "Groove De-gate Machine: ",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 19,
+    "shape": "0",
+    "p": 0,
+    "r": 7,
+    "text": "Height Detection Module Tuning",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 19,
+    "shape": "4",
+    "p": 0,
+    "r": 0,
+    "text": "Step 1",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 19,
+    "shape": "4",
+    "p": 0,
+    "r": 2,
+    "text": "Place gauge on the flipping platform",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 19,
+    "shape": "5",
+    "p": 0,
+    "r": 0,
+    "text": "Step 2",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 19,
+    "shape": "5",
+    "p": 0,
+    "r": 2,
+    "text": "P",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 19,
+    "shape": "5",
+    "p": 0,
+    "r": 3,
+    "text": "in is aligned with hole position of high detection in the XY directions;",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 19,
+    "shape": "5",
+    "p": 1,
+    "r": 0,
+    "text": "Use a distance sensor to measure the high detection of several steps on inspection fixture to calibrate Z-axis value.",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 19,
+    "shape": "13",
+    "p": 0,
+    "r": 2,
+    "text": "5mm",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 19,
+    "shape": "14",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 19,
+    "shape": "14",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 19,
+    "shape": "14",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 19,
+    "shape": "15",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 19,
+    "shape": "15",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 19,
+    "shape": "16",
+    "p": 0,
+    "r": 0,
+    "text": "Groove De-gate Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 20,
+    "shape": "0",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 20,
+    "shape": "0",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 20,
+    "shape": "0",
+    "p": 0,
+    "r": 6,
+    "text": "Groove De-gate Machine: Vision Calibration ",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 20,
+    "shape": "4",
+    "p": 0,
+    "r": 0,
+    "text": "Step 1",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 20,
+    "shape": "4",
+    "p": 0,
+    "r": 2,
+    "text": "Place gauge on the flipping platform",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 20,
+    "shape": "5",
+    "p": 0,
+    "r": 0,
+    "text": "Step 2",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 20,
+    "shape": "5",
+    "p": 0,
+    "r": 2,
+    "text": "The milling cutter mills nine round holes on the inspection fixture plate; then it moves to CCD, the calibration program performs calibration, generates a calibration file, and completes the calibration.",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 20,
+    "shape": "9",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 20,
+    "shape": "10",
+    "p": 0,
+    "r": 0,
+    "text": "Y",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 20,
+    "shape": "13",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 20,
+    "shape": "14",
+    "p": 0,
+    "r": 0,
+    "text": "Y",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 20,
+    "shape": "16",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 20,
+    "shape": "16",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 20,
+    "shape": "16",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 20,
+    "shape": "17",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 20,
+    "shape": "17",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 20,
+    "shape": "19",
+    "p": 0,
+    "r": 0,
+    "text": "Groove De-gate Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 21,
+    "shape": "0",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 21,
+    "shape": "0",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 21,
+    "shape": "0",
+    "p": 0,
+    "r": 6,
+    "text": "Groove De-gate Machine: Spindle Position Tuning",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 21,
+    "shape": "5",
+    "p": 0,
+    "r": 0,
+    "text": "Step 1",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 21,
+    "shape": "5",
+    "p": 0,
+    "r": 2,
+    "text": "Place gauge on the flipping platform",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 21,
+    "shape": "6",
+    "p": 0,
+    "r": 0,
+    "text": "Step 2",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 21,
+    "shape": "6",
+    "p": 0,
+    "r": 2,
+    "text": "Align the pin with the spindle position, perform initial position of the spindle, and wait for the XY position of the milling cutter.",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 21,
+    "shape": "12",
+    "p": 0,
+    "r": 2,
+    "text": "5mm",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 21,
+    "shape": "13",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 21,
+    "shape": "13",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 21,
+    "shape": "13",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 21,
+    "shape": "14",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 21,
+    "shape": "14",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 21,
+    "shape": "15",
+    "p": 0,
+    "r": 0,
+    "text": "Groove De-gate Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 22,
+    "shape": "2",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 22,
+    "shape": "2",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 22,
+    "shape": "2",
+    "p": 0,
+    "r": 6,
+    "text": "Inlet & Outlet",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 22,
+    "shape": "2",
+    "p": 0,
+    "r": 7,
+    "text": " De-gate Machine: ",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 22,
+    "shape": "2",
+    "p": 0,
+    "r": 8,
+    "text": "Pick-Up/Place Down Module",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 22,
+    "shape": "4",
+    "p": 0,
+    "r": 0,
+    "text": "Inlet & Outlet De-gate Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 22,
+    "shape": "5",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 22,
+    "shape": "5",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 22,
+    "shape": "5",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 22,
+    "shape": "6",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 22,
+    "shape": "6",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 22,
+    "shape": "8",
+    "p": 0,
+    "r": 0,
+    "text": "Step 1",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 22,
+    "shape": "8",
+    "p": 0,
+    "r": 2,
+    "text": "Place gauge on the loading position.",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 22,
+    "shape": "9",
+    "p": 0,
+    "r": 0,
+    "text": "Step 2",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 22,
+    "shape": "9",
+    "p": 0,
+    "r": 2,
+    "text": "Align the suction cup with gripping position of inspection fixture in the XYZ directions and locate loading position in the XYZ directions.",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 22,
+    "shape": "16",
+    "p": 0,
+    "r": 2,
+    "text": "5mm",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 23,
+    "shape": "2",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 23,
+    "shape": "2",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 23,
+    "shape": "2",
+    "p": 0,
+    "r": 6,
+    "text": "Inlet & Outlet",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 23,
+    "shape": "2",
+    "p": 0,
+    "r": 7,
+    "text": " De-gate Machine: ",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 23,
+    "shape": "2",
+    "p": 0,
+    "r": 8,
+    "text": "Height Detection Module Tuning",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 23,
+    "shape": "3",
+    "p": 0,
+    "r": 0,
+    "text": "Inlet & Outlet De-gate Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 23,
+    "shape": "4",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 23,
+    "shape": "4",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 23,
+    "shape": "10",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 23,
+    "shape": "10",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 23,
+    "shape": "10",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 23,
+    "shape": "12",
+    "p": 0,
+    "r": 0,
+    "text": "Step 1",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 23,
+    "shape": "12",
+    "p": 0,
+    "r": 2,
+    "text": "Place gauge on the flipping platform",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 23,
+    "shape": "13",
+    "p": 0,
+    "r": 0,
+    "text": "Step 2",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 23,
+    "shape": "13",
+    "p": 0,
+    "r": 2,
+    "text": "P",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 23,
+    "shape": "13",
+    "p": 0,
+    "r": 3,
+    "text": "in is aligned with hole position of high detection in the XY directions;",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 23,
+    "shape": "13",
+    "p": 1,
+    "r": 0,
+    "text": "Use a distance sensor to measure the high detection of several steps on inspection fixture to calibrate Z-axis value.",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 23,
+    "shape": "20",
+    "p": 0,
+    "r": 2,
+    "text": "5mm",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 24,
+    "shape": "2",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 24,
+    "shape": "2",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 24,
+    "shape": "2",
+    "p": 0,
+    "r": 6,
+    "text": "Inlet & Outlet",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 24,
+    "shape": "2",
+    "p": 0,
+    "r": 7,
+    "text": " De-gate Machine: Spindle Position Tuning",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 24,
+    "shape": "3",
+    "p": 0,
+    "r": 0,
+    "text": "Inlet & Outlet De-gate Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 24,
+    "shape": "4",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 24,
+    "shape": "4",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 24,
+    "shape": "9",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 24,
+    "shape": "9",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 24,
+    "shape": "9",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 24,
+    "shape": "13",
+    "p": 0,
+    "r": 0,
+    "text": "Step 1",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 24,
+    "shape": "13",
+    "p": 0,
+    "r": 2,
+    "text": "Place gauge on the flipping platform",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 24,
+    "shape": "14",
+    "p": 0,
+    "r": 0,
+    "text": "Step 2",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 24,
+    "shape": "14",
+    "p": 0,
+    "r": 2,
+    "text": "The milling cutter mills nine round holes on the inspection fixture plate; then it moves to CCD, the calibration program performs calibration, generates a calibration file, and completes the calibration.",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 24,
+    "shape": "17",
+    "p": 0,
+    "r": 0,
+    "text": "Y",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 24,
+    "shape": "20",
+    "p": 0,
+    "r": 0,
+    "text": "Y",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 25,
+    "shape": "2",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 25,
+    "shape": "2",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 25,
+    "shape": "2",
+    "p": 0,
+    "r": 6,
+    "text": "Inlet & Outlet",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 25,
+    "shape": "2",
+    "p": 0,
+    "r": 7,
+    "text": " De-gate Machine: Vision Calibration ",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 25,
+    "shape": "3",
+    "p": 0,
+    "r": 0,
+    "text": "Inlet & Outlet De-gate Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 25,
+    "shape": "4",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 25,
+    "shape": "4",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 25,
+    "shape": "10",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 25,
+    "shape": "10",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 25,
+    "shape": "10",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 25,
+    "shape": "20",
+    "p": 0,
+    "r": 2,
+    "text": "5mm",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 25,
+    "shape": "22",
+    "p": 0,
+    "r": 0,
+    "text": "Step 1",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 25,
+    "shape": "22",
+    "p": 0,
+    "r": 2,
+    "text": "Place gauge on the flipping platform",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 25,
+    "shape": "23",
+    "p": 0,
+    "r": 0,
+    "text": "Step 2",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 25,
+    "shape": "23",
+    "p": 0,
+    "r": 2,
+    "text": "Align the pin with the spindle position, perform initial position of the spindle, and wait for the XY position of the milling cutter.",
+    "size": 9.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "4",
+    "p": 0,
+    "r": 0,
+    "text": "X",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "4",
+    "p": 0,
+    "r": 3,
+    "text": "LIPO Automation",
+    "size": 20.0,
+    "bold": true
+  },
+  {
+    "slide": 26,
+    "shape": "4",
+    "p": 0,
+    "r": 6,
+    "text": "BG Unloading ",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "4",
+    "p": 0,
+    "r": 7,
+    "text": "Machine: ",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "4",
+    "p": 0,
+    "r": 8,
+    "text": "Secondary Position Platform",
+    "size": 20.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "5",
+    "p": 0,
+    "r": 0,
+    "text": "BG unloading Machine",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "6",
+    "p": 0,
+    "r": 0,
+    "text": "Process",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "6",
+    "p": 0,
+    "r": 2,
+    "text": "Flow",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "10",
+    "p": 0,
+    "r": 0,
+    "text": "Gauge",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "10",
+    "p": 0,
+    "r": 2,
+    "text": "Intro",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "10",
+    "p": 0,
+    "r": 6,
+    "text": "Tuning Steps",
+    "size": 14.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "11.0",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "11.1",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "11.2",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "11.3",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "11.4",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "11.5",
+    "p": 0,
+    "r": 0,
+    "text": "v",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "11.6",
+    "p": 0,
+    "r": 0,
+    "text": "BG loading flow",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "11.7",
+    "p": 0,
+    "r": 0,
+    "text": "Tray",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "11.7",
+    "p": 0,
+    "r": 1,
+    "text": " flow",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "11.8",
+    "p": 0,
+    "r": 0,
+    "text": "1.Load empty tray",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "11.9",
+    "p": 0,
+    "r": 0,
+    "text": "2.Locate tray",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "11.10",
+    "p": 0,
+    "r": 0,
+    "text": "3.Transfer tray",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "11.11",
+    "p": 0,
+    "r": 0,
+    "text": "4.Unload full tray",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "11.12",
+    "p": 0,
+    "r": 0,
+    "text": "1.Vacuum cup pick up BG",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "11.13",
+    "p": 0,
+    "r": 0,
+    "text": "2. Place BG into tray",
+    "size": 6.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "13",
+    "p": 0,
+    "r": 0,
+    "text": "Step 1: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "13",
+    "p": 0,
+    "r": 1,
+    "text": "Place the gauge into fixture and clamp it tightly。",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "14",
+    "p": 0,
+    "r": 0,
+    "text": "Step 2: ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "14",
+    "p": 0,
+    "r": 1,
+    "text": "The unloading module moves to loading position.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "15",
+    "p": 0,
+    "r": 0,
+    "text": "Step",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "15",
+    "p": 0,
+    "r": 3,
+    "text": "Gauge ",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "15",
+    "p": 0,
+    "r": 4,
+    "text": "Descend Z-axis to align suction nozzle with gauge.",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "16",
+    "p": 0,
+    "r": 0,
+    "text": "Step",
+    "size": 10.0,
+    "bold": null
+  },
+  {
+    "slide": 26,
+    "shape": "16",
+    "p": 0,
+    "r": 2,
+    "text": "Record the current position as picking position for BG uploading platform.",
+    "size": 10.0,
+    "bold": null
+  }
+]
