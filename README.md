@@ -1,4 +1,4 @@
-# Khazix-Skills
+# Hchen-Skills
 
 A collection of AI Skills for managing and evolving your skill library. These tools help you create, maintain, and continuously improve AI skills from GitHub repositories.
 
