@@ -37,6 +37,8 @@ def detect_platform(url: str) -> str:
         return "douyin"
     if any(x in host for x in ["xiaohongshu.com", "xhslink.com"]):
         return "xiaohongshu"
+    if any(x in host for x in ["mp.weixin.qq.com", "weixin.qq.com"]):
+        return "wechat_mp"
     return "unknown"
 
 

@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import re
 import shutil
 import subprocess
 import sys
@@ -22,7 +23,7 @@ from common import (
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="viral-content-breakdown 一键流水线")
-    parser.add_argument("--url", required=True, help="抖音/小红书单链接")
+    parser.add_argument("--url", required=True, help="抖音/小红书/公众号单链接")
     parser.add_argument("--save-artifacts", choices=["ask", "always", "never"], default="ask")
     parser.add_argument("--output-dir", help="默认 ./viral_breakdowns/<slug>/")
     parser.add_argument("--browser", choices=["safari", "chromium"], default="safari")
@@ -56,7 +57,7 @@ def _run_step(cmd: List[str], step: str, run_meta: Dict[str, object]) -> None:
 
 
 def _cleanup_for_never(output_dir: Path) -> None:
-    keep_names = {"report.json", "run_meta.json", "error.json"}
+    keep_names = {"report.json", "report.md", "run_meta.json", "error.json"}
     for path in output_dir.rglob("*"):
         if not path.is_file():
             continue
@@ -73,11 +74,59 @@ def _cleanup_for_never(output_dir: Path) -> None:
                 pass
 
 
+def _sanitize_summary(text: str) -> str:
+    text = (text or "").strip()
+    text = re.sub(r"\s+", " ", text)
+    text = re.sub(r"[\\/:*?\"<>|]+", "-", text)
+    text = re.sub(r"[^0-9A-Za-z\u4e00-\u9fff\-_ ]+", "-", text)
+    text = text.strip(" .-_")
+    if not text:
+        text = "content"
+    return text[:40]
+
+
+def _derive_named_prefix(report: Dict[str, object], url: str) -> str:
+    meta = report.get("meta", {}) if isinstance(report.get("meta"), dict) else {}
+    post = report.get("post_content", {}) if isinstance(report.get("post_content"), dict) else {}
+    cover = report.get("cover_title", {}) if isinstance(report.get("cover_title"), dict) else {}
+    fetched_at = str(meta.get("fetched_at", ""))[:10]
+    date_part = fetched_at.replace("-", "")
+    if not date_part or len(date_part) != 8:
+        date_part = utc_now_iso()[:10].replace("-", "")
+    summary = _sanitize_summary(str(post.get("title", "")))
+    if summary == "content":
+        summary = _sanitize_summary(str(cover.get("text", "")))
+    if summary == "content":
+        summary = _sanitize_summary(slugify_url(url).rsplit("-", 1)[0])
+    return f"{date_part}-{summary}"
+
+
+def _export_named_reports(output_dir: Path, report: Dict[str, object], url: str) -> Dict[str, str]:
+    root = ensure_dir(Path.cwd() / "viral_breakdowns")
+    prefix = _derive_named_prefix(report, url)
+    json_src = output_dir / "report.json"
+    md_src = output_dir / "report.md"
+    json_dst = root / f"{prefix}.json"
+    md_dst = root / f"{prefix}.md"
+
+    idx = 2
+    while json_dst.exists() or md_dst.exists():
+        json_dst = root / f"{prefix}-{idx}.json"
+        md_dst = root / f"{prefix}-{idx}.md"
+        idx += 1
+
+    if json_src.exists():
+        shutil.copy2(json_src, json_dst)
+    if md_src.exists():
+        shutil.copy2(md_src, md_dst)
+    return {"json": str(json_dst), "markdown": str(md_dst)}
+
+
 def main() -> int:
     args = parse_args()
     platform = detect_platform(args.url)
     if platform == "unknown":
-        print("仅支持抖音/小红书链接")
+        print("仅支持抖音/小红书/公众号链接")
         return 1
 
     non_interactive = args.non_interactive or (not sys.stdin.isatty())
@@ -174,6 +223,7 @@ def main() -> int:
         )
 
         report_file = output_dir / "report.json"
+        markdown_file = output_dir / "report.md"
         _run_step(
             [
                 sys.executable,
@@ -182,6 +232,8 @@ def main() -> int:
                 str(signals_file),
                 "--output",
                 str(report_file),
+                "--markdown-output",
+                str(markdown_file),
                 "--model",
                 args.model,
             ],
@@ -195,11 +247,15 @@ def main() -> int:
 
         run_meta["finished_at"] = utc_now_iso()
         run_meta["ok"] = True
+        report = read_json(report_file, default={})
+        run_meta["named_outputs"] = _export_named_reports(output_dir, report, args.url)
         write_json(run_meta_path, run_meta)
 
-        report = read_json(report_file, default={})
         print("[pipeline] 完成")
         print(f"[pipeline] 报告: {report_file}")
+        print(f"[pipeline] Markdown: {markdown_file}")
+        print(f"[pipeline] 导出 JSON: {run_meta.get('named_outputs', {}).get('json', '')}")
+        print(f"[pipeline] 导出 MD: {run_meta.get('named_outputs', {}).get('markdown', '')}")
         print(f"[pipeline] 模式: {report.get('meta', {}).get('analysis_mode', 'unknown')}")
         return 0
 

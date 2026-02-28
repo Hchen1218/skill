@@ -5,6 +5,8 @@
 {
   "meta": {},
   "asset_index": {},
+  "engagement_metrics": {},
+  "visual_specs": {},
   "post_content": {},
   "hook": {},
   "script_structure": [],
@@ -22,9 +24,10 @@
 ## 字段说明
 - `meta`
   - `url`: string
-  - `platform`: `douyin|xiaohongshu`
-  - `content_type`: `video|image_post|unknown`
+  - `platform`: `douyin|xiaohongshu|wechat_mp`
+  - `content_type`: `video|image_post|article|unknown`
   - `fetched_at`: ISO8601
+  - `published_at`: string（可空）
   - `analyzed_at`: ISO8601
   - `language`: `zh-CN`
   - `analysis_mode`: `llm|fallback`
@@ -35,6 +38,23 @@
   - `audio`: string[]
   - `transcript`: string[]
   - `cover_text`: string[]
+
+- `engagement_metrics`
+  - `likes`: number|null
+  - `comments`: number|null
+  - `plays`: number|null
+
+- `visual_specs`
+  - `video_main_aspect_ratio`
+    - `value`: string（例如 `9:16`）
+    - `width`: number|null
+    - `height`: number|null
+    - `confidence`: number
+  - `subtitle_style_inference`
+    - `subtitle_size`: string（推断）
+    - `font_style`: string（推断）
+    - `confidence`: number
+    - `reason`: string
 
 - `post_content`
   - `title`: string

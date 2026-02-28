@@ -23,6 +23,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="基于信号生成结构化爆款拆解 report.json")
     parser.add_argument("--signals", required=True, help="extract_signals.py 输出 JSON")
     parser.add_argument("--output", required=True, help="最终 report.json 路径")
+    parser.add_argument("--markdown-output", help="可选：同步输出 Markdown 报告路径")
     parser.add_argument("--model", default="gpt-4.1-mini")
     return parser.parse_args()
 
@@ -63,6 +64,8 @@ def _fallback_report(signals: Dict[str, Any]) -> Dict[str, Any]:
     meta = signals.get("meta", {})
     asset_index = signals.get("asset_index", {})
     post_content = signals.get("post_content", {})
+    engagement_metrics = signals.get("engagement_metrics", {})
+    visual_specs = signals.get("visual_specs", {})
     sig = signals.get("signals", {})
 
     transcript_chunks = sig.get("transcript_chunks", [])
@@ -171,6 +174,18 @@ def _fallback_report(signals: Dict[str, Any]) -> Dict[str, Any]:
             "transcript": asset_index.get("transcript", []),
             "cover_text": asset_index.get("cover_text", []),
         },
+        "engagement_metrics": {
+            "likes": engagement_metrics.get("likes"),
+            "comments": engagement_metrics.get("comments"),
+            "plays": engagement_metrics.get("plays"),
+        },
+        "visual_specs": {
+            "video_main_aspect_ratio": visual_specs.get("video_main_aspect_ratio", {"value": "unknown"}),
+            "subtitle_style_inference": visual_specs.get(
+                "subtitle_style_inference",
+                {"subtitle_size": "unknown", "font_style": "unknown", "confidence": 0.2, "reason": "无足够信息"},
+            ),
+        },
         "post_content": {
             "title": str(post_content.get("title", "")),
             "body": str(post_content.get("body", "")),
@@ -225,7 +240,7 @@ def _llm_report(signals: Dict[str, Any], model: str) -> Dict[str, Any]:
     prompt = (
         "你是短视频/图文爆款拆解分析师。"
         "请严格输出 JSON 对象，不要输出任何额外文本。"
-        "字段必须包含：meta,asset_index,post_content,hook,script_structure,narrative_pattern,cover_title,"
+        "字段必须包含：meta,asset_index,engagement_metrics,visual_specs,post_content,hook,script_structure,narrative_pattern,cover_title,"
         "voiceover_copy,production_method_inference,virality_drivers,adaptation_ideas,limitations,confidence_overall。"
         "要求：结论附 evidence；production_method_inference 必须是 Top3 推断并给 confidence；"
         "adaptation_ideas 只给思路，不给完整改写稿；语言为简体中文。"
@@ -234,6 +249,8 @@ def _llm_report(signals: Dict[str, Any], model: str) -> Dict[str, Any]:
     content = {
         "meta": signals.get("meta", {}),
         "asset_index": signals.get("asset_index", {}),
+        "engagement_metrics": signals.get("engagement_metrics", {}),
+        "visual_specs": signals.get("visual_specs", {}),
         "post_content": signals.get("post_content", {}),
         "signals": signals.get("signals", {}),
         "limitations": signals.get("limitations", []),
@@ -257,6 +274,8 @@ def _validate_report(report: Dict[str, Any], signals: Dict[str, Any]) -> Dict[st
     required = [
         "meta",
         "asset_index",
+        "engagement_metrics",
+        "visual_specs",
         "post_content",
         "hook",
         "script_structure",
@@ -271,9 +290,34 @@ def _validate_report(report: Dict[str, Any], signals: Dict[str, Any]) -> Dict[st
     ]
     for key in required:
         if key not in report:
-            report[key] = {} if key in {"meta", "asset_index", "post_content", "hook", "narrative_pattern", "cover_title", "voiceover_copy"} else []
+            report[key] = (
+                {}
+                if key
+                in {
+                    "meta",
+                    "asset_index",
+                    "engagement_metrics",
+                    "visual_specs",
+                    "post_content",
+                    "hook",
+                    "narrative_pattern",
+                    "cover_title",
+                    "voiceover_copy",
+                }
+                else []
+            )
 
-    for key in ["meta", "asset_index", "post_content", "hook", "narrative_pattern", "cover_title", "voiceover_copy"]:
+    for key in [
+        "meta",
+        "asset_index",
+        "engagement_metrics",
+        "visual_specs",
+        "post_content",
+        "hook",
+        "narrative_pattern",
+        "cover_title",
+        "voiceover_copy",
+    ]:
         if not isinstance(report.get(key), dict):
             report[key] = {}
     for key in ["script_structure", "production_method_inference", "virality_drivers", "adaptation_ideas", "limitations"]:
@@ -331,6 +375,18 @@ def _validate_report(report: Dict[str, Any], signals: Dict[str, Any]) -> Dict[st
         "transcript": signals.get("asset_index", {}).get("transcript", []),
         "cover_text": signals.get("asset_index", {}).get("cover_text", []),
     }
+    report["engagement_metrics"] = {
+        "likes": signals.get("engagement_metrics", {}).get("likes"),
+        "comments": signals.get("engagement_metrics", {}).get("comments"),
+        "plays": signals.get("engagement_metrics", {}).get("plays"),
+    }
+    report["visual_specs"] = {
+        "video_main_aspect_ratio": signals.get("visual_specs", {}).get("video_main_aspect_ratio", {"value": "unknown"}),
+        "subtitle_style_inference": signals.get("visual_specs", {}).get(
+            "subtitle_style_inference",
+            {"subtitle_size": "unknown", "font_style": "unknown", "confidence": 0.2, "reason": "无足够信息"},
+        ),
+    }
     report["post_content"] = {
         "title": str(signals.get("post_content", {}).get("title", "")),
         "body": str(signals.get("post_content", {}).get("body", "")),
@@ -357,6 +413,110 @@ def _validate_report(report: Dict[str, Any], signals: Dict[str, Any]) -> Dict[st
                 driver["evidence"] = _normalize_evidence(signals.get("signals", {}).get("evidence_pool", [])[:2])
 
     return report
+
+
+def _fmt_num(value: Any) -> str:
+    if value is None or value == "":
+        return "未知"
+    try:
+        return f"{int(value):,}"
+    except Exception:
+        return str(value)
+
+
+def _render_markdown(report: Dict[str, Any]) -> str:
+    meta = report.get("meta", {})
+    post = report.get("post_content", {})
+    hook = report.get("hook", {})
+    cover = report.get("cover_title", {})
+    voice = report.get("voiceover_copy", {})
+    metrics = report.get("engagement_metrics", {})
+    visual = report.get("visual_specs", {})
+    ratio = visual.get("video_main_aspect_ratio", {})
+    subtitle = visual.get("subtitle_style_inference", {})
+    tags = post.get("tags", []) if isinstance(post.get("tags", []), list) else []
+    script = report.get("script_structure", []) if isinstance(report.get("script_structure"), list) else []
+    drivers = report.get("virality_drivers", []) if isinstance(report.get("virality_drivers"), list) else []
+    methods = report.get("production_method_inference", []) if isinstance(report.get("production_method_inference"), list) else []
+    ideas = report.get("adaptation_ideas", []) if isinstance(report.get("adaptation_ideas"), list) else []
+    limitations = report.get("limitations", []) if isinstance(report.get("limitations"), list) else []
+
+    lines: List[str] = []
+    lines.append("# 爆款内容拆解报告")
+    lines.append("")
+    lines.append("## 基本信息")
+    lines.append(f"- 链接：{meta.get('url', '')}")
+    lines.append(f"- 平台：{meta.get('platform', 'unknown')}")
+    lines.append(f"- 内容类型：{meta.get('content_type', 'unknown')}")
+    lines.append(f"- 抓取时间：{meta.get('fetched_at', '')}")
+    lines.append(f"- 分析模式：{meta.get('analysis_mode', 'fallback')}")
+    lines.append("")
+    lines.append("## 热度数据")
+    lines.append(f"- 点赞：{_fmt_num(metrics.get('likes'))}")
+    lines.append(f"- 评论：{_fmt_num(metrics.get('comments'))}")
+    lines.append(f"- 播放：{_fmt_num(metrics.get('plays'))}")
+    lines.append("")
+    lines.append("## 标题与正文")
+    lines.append(f"- 标题：{post.get('title', '') or '无'}")
+    lines.append(f"- 封面标题：{cover.get('text', '') or '无'}")
+    lines.append(f"- Tag：{' / '.join([str(t) for t in tags]) if tags else '无'}")
+    lines.append(f"- 正文：{(post.get('body', '') or '无')[:1200]}")
+    lines.append("")
+    lines.append("## 视频画面参数")
+    lines.append(
+        f"- 主画面宽高比：{ratio.get('value', 'unknown')} "
+        f"(宽={ratio.get('width', '未知')}, 高={ratio.get('height', '未知')}, 置信={ratio.get('confidence', '未知')})"
+    )
+    lines.append(
+        f"- 字幕大小：{subtitle.get('subtitle_size', 'unknown')} "
+        f"(置信={subtitle.get('confidence', '未知')})"
+    )
+    lines.append(f"- 字体格式：{subtitle.get('font_style', 'unknown')}")
+    lines.append(f"- 判断依据：{subtitle.get('reason', '无')}")
+    lines.append("")
+    lines.append("## 视频口播级拆解")
+    lines.append(f"- 开场钩子：{hook.get('text', '') or '无'}")
+    lines.append(f"- 口播稿提炼：{voice.get('text', '') or 'none'}")
+    lines.append("")
+    lines.append("### 分段脚本")
+    if script:
+        for idx, sec in enumerate(script, start=1):
+            lines.append(f"{idx}. {sec.get('section', '未命名')}: {sec.get('text', '')}")
+    else:
+        lines.append("- 无可用分段。")
+    lines.append("")
+    lines.append("## 叙事与爆点")
+    narrative = report.get("narrative_pattern", {})
+    lines.append(f"- 叙事方式：{narrative.get('name', '未知')}")
+    lines.append(f"- 说明：{narrative.get('description', '无')}")
+    if drivers:
+        lines.append("")
+        lines.append("### 爆点驱动")
+        for idx, d in enumerate(drivers, start=1):
+            lines.append(f"{idx}. {d.get('driver', '未命名')}: {d.get('why', '')}")
+    lines.append("")
+    lines.append("## 制作方式推断（Top3）")
+    if methods:
+        for idx, m in enumerate(methods, start=1):
+            lines.append(f"{idx}. {m.get('method', '未知')}（置信 {m.get('confidence', 0)}）")
+    else:
+        lines.append("- 无可用推断。")
+    lines.append("")
+    lines.append("## 可复制拍法与优化建议")
+    if ideas:
+        for idx, idea in enumerate(ideas, start=1):
+            lines.append(f"{idx}. {idea.get('idea', '未命名')}")
+            lines.append(f"   - 理由：{idea.get('rationale', '')}")
+    else:
+        lines.append("- 无可用建议。")
+    lines.append("")
+    lines.append("## 限制说明")
+    if limitations:
+        for item in limitations:
+            lines.append(f"- {item}")
+    else:
+        lines.append("- 无。")
+    return "\n".join(lines).strip() + "\n"
 
 
 def main() -> int:
@@ -391,6 +551,10 @@ def main() -> int:
     report["meta"]["analysis_mode"] = "llm" if llm_used else "fallback"
 
     write_json(out_path, report)
+    if args.markdown_output:
+        md_path = Path(args.markdown_output).resolve()
+        md_path.parent.mkdir(parents=True, exist_ok=True)
+        md_path.write_text(_render_markdown(report), encoding="utf-8")
     print(out_path)
     return 0
 

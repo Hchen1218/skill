@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import math
 import os
 import re
 import wave
@@ -209,6 +210,103 @@ def _extract_audio(video_path: Path, audio_path: Path) -> Dict[str, Any]:
     if isinstance(log, dict):
         return {"ffmpeg": log, "av": log2}
     return log2
+
+
+def _video_resolution(video_path: Path) -> Tuple[Optional[int], Optional[int]]:
+    try:
+        import av  # type: ignore
+
+        container = av.open(str(video_path))
+        stream = container.streams.video[0]
+        width = int(stream.width or 0) or None
+        height = int(stream.height or 0) or None
+        container.close()
+        if width and height:
+            return width, height
+    except Exception:
+        pass
+
+    ffprobe = find_executable("ffprobe")
+    if not ffprobe:
+        return None, None
+    cmd = [
+        ffprobe,
+        "-v",
+        "error",
+        "-select_streams",
+        "v:0",
+        "-show_entries",
+        "stream=width,height",
+        "-of",
+        "csv=s=x:p=0",
+        str(video_path),
+    ]
+    res = run_cmd(cmd)
+    if res.code != 0:
+        return None, None
+    raw = res.stdout.strip()
+    if "x" not in raw:
+        return None, None
+    try:
+        w, h = raw.split("x", 1)
+        return int(w), int(h)
+    except Exception:
+        return None, None
+
+
+def _aspect_ratio_label(width: Optional[int], height: Optional[int]) -> str:
+    if not width or not height or width <= 0 or height <= 0:
+        return "unknown"
+    g = math.gcd(width, height)
+    a = width // g
+    b = height // g
+    if a == 9 and b == 16:
+        return "9:16"
+    if a == 16 and b == 9:
+        return "16:9"
+    if a == 1 and b == 1:
+        return "1:1"
+    return f"{a}:{b}"
+
+
+def _infer_subtitle_style(
+    transcript_chunks: List[Dict[str, Any]], ocr_hits: List[Dict[str, Any]]
+) -> Dict[str, Any]:
+    text_density = 0
+    if transcript_chunks:
+        text_density = int(sum(len(x.get("text", "")) for x in transcript_chunks[:10]) / max(len(transcript_chunks[:10]), 1))
+
+    size = "unknown"
+    font_style = "unknown"
+    conf = 0.2
+    reason = "未检测到足够的画面文字几何信息，仅可做弱推断。"
+
+    if ocr_hits and transcript_chunks:
+        size = "中号（推断）"
+        font_style = "无衬线加粗（推断）"
+        conf = 0.38
+        reason = "画面 OCR 与口播文本都存在，常见于移动端口播字幕模板。"
+    elif ocr_hits:
+        size = "中号（低置信推断）"
+        font_style = "无衬线（低置信推断）"
+        conf = 0.3
+        reason = "存在可读画面文字，但缺少字幕框几何信息。"
+    elif transcript_chunks:
+        size = "中小号（低置信推断）"
+        font_style = "无衬线（低置信推断）"
+        conf = 0.26
+        reason = "有口播文本但 OCR 缺失，按常见短视频字幕样式给出低置信推断。"
+
+    if text_density > 25 and conf > 0.25:
+        size = "中小号（推断）"
+        conf = min(0.45, conf + 0.05)
+
+    return {
+        "subtitle_size": size,
+        "font_style": font_style,
+        "confidence": round(conf, 2),
+        "reason": reason,
+    }
 
 
 def _get_rapidocr_engine() -> Optional[Any]:
@@ -497,6 +595,8 @@ def main() -> int:
         return 1
 
     asset_index = fetch.get("asset_index", {})
+    post_content = fetch.get("post_content", {})
+    engagement_metrics = fetch.get("engagement_metrics", {})
     videos = [Path(p) for p in asset_index.get("video", []) if Path(p).exists()]
     images = [Path(p) for p in asset_index.get("images", []) if Path(p).exists()]
     transcripts = [Path(p) for p in asset_index.get("transcript", []) if Path(p).exists()]
@@ -508,9 +608,17 @@ def main() -> int:
     transcript_chunks: List[Dict[str, Any]] = []
     logs: List[Any] = []
     generated_audio: List[str] = []
+    ratio_info: Dict[str, Any] = {"value": "unknown", "width": None, "height": None, "confidence": 0.2}
 
     if videos:
         video_path = videos[0]
+        width, height = _video_resolution(video_path)
+        ratio_info = {
+            "value": _aspect_ratio_label(width, height),
+            "width": width,
+            "height": height,
+            "confidence": 0.92 if width and height else 0.2,
+        }
         frames, frame_logs = _extract_frames(video_path, frame_dir)
         logs.extend(frame_logs)
 
@@ -557,12 +665,41 @@ def main() -> int:
 
     meta_chunks, meta_evidence, meta_cover, post_content = _extract_from_info_json(info_json_files)
     transcript_chunks.extend(meta_chunks)
+    if not post_content.get("title"):
+        post_content = {
+            "title": str(fetch.get("post_content", {}).get("title", "")),
+            "body": str(fetch.get("post_content", {}).get("body", "")),
+            "tags": fetch.get("post_content", {}).get("tags", []),
+        }
+    else:
+        if not post_content.get("body"):
+            post_content["body"] = str(fetch.get("post_content", {}).get("body", ""))
+        if not post_content.get("tags"):
+            post_content["tags"] = fetch.get("post_content", {}).get("tags", [])
+
+    if not ratio_info.get("width") and images:
+        try:
+            from PIL import Image  # type: ignore
+
+            with Image.open(images[0]) as img:
+                w, h = img.size
+            ratio_info = {
+                "value": _aspect_ratio_label(w, h),
+                "width": w,
+                "height": h,
+                "confidence": 0.88,
+            }
+        except Exception:
+            pass
 
     cover_title = ""
     if ocr_hits:
         cover_title = ocr_hits[0]["text"].splitlines()[0][:80]
+    elif post_content.get("title"):
+        cover_title = str(post_content.get("title", ""))[:80]
 
     evidence = _build_evidence_from_ocr(ocr_hits) + _build_evidence_from_transcript(transcript_chunks) + meta_evidence
+    subtitle_style = _infer_subtitle_style(transcript_chunks, ocr_hits)
 
     limitations: List[str] = []
     if not transcript_chunks:
@@ -588,9 +725,14 @@ def main() -> int:
             "cover_text": [cover_title] if cover_title else (meta_cover[:1] if meta_cover else []),
         },
         "post_content": {
-            "title": post_content.get("title", ""),
-            "body": post_content.get("body", ""),
-            "tags": post_content.get("tags", []),
+            "title": str(post_content.get("title", "")),
+            "body": str(post_content.get("body", "")),
+            "tags": post_content.get("tags", []) if isinstance(post_content.get("tags", []), list) else [],
+        },
+        "engagement_metrics": engagement_metrics,
+        "visual_specs": {
+            "video_main_aspect_ratio": ratio_info,
+            "subtitle_style_inference": subtitle_style,
         },
         "signals": {
             "ocr_hits": ocr_hits,

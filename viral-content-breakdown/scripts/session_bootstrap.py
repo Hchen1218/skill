@@ -12,6 +12,7 @@ from common import detect_platform, safe_chmod_600, structured_error, utc_now_is
 DEFAULT_LOGIN_URLS: Dict[str, str] = {
     "douyin": "https://www.douyin.com/",
     "xiaohongshu": "https://www.xiaohongshu.com/",
+    "wechat_mp": "https://mp.weixin.qq.com/",
     "unknown": "https://www.douyin.com/",
 }
 
@@ -37,7 +38,7 @@ def _open_browser(url: str, browser: str) -> Tuple[bool, str]:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="扫码登录并保存会话配置")
     parser.add_argument("--url", help="内容链接，用于自动判断平台")
-    parser.add_argument("--platform", choices=["auto", "douyin", "xiaohongshu"], default="auto")
+    parser.add_argument("--platform", choices=["auto", "douyin", "xiaohongshu", "wechat_mp"], default="auto")
     parser.add_argument("--browser", choices=["safari", "chromium"], default="safari")
     parser.add_argument("--session-mode", choices=["qr-login"], default="qr-login")
     parser.add_argument("--session-file", required=True, help="会话文件输出路径（json）")
