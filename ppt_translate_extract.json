@@ -1,0 +1,1286 @@
+{
+  "paragraphs": 477,
+  "unique": 320,
+  "items": [
+    {
+      "text": "X | Saejong: Mesh to BG Assembly Semi-auto EVT DFM(iPEG D3y Mic2 Mesh Semi-auto ECN)",
+      "sample_slide": 1
+    },
+    {
+      "text": "Revision ",
+      "sample_slide": 2
+    },
+    {
+      "text": "Date",
+      "sample_slide": 2
+    },
+    {
+      "text": "Summary",
+      "sample_slide": 2
+    },
+    {
+      "text": "Page ",
+      "sample_slide": 2
+    },
+    {
+      "text": "V1.0",
+      "sample_slide": 2
+    },
+    {
+      "text": " Initial Version",
+      "sample_slide": 2
+    },
+    {
+      "text": "X | Mesh to BG Assembly: DFM Revision",
+      "sample_slide": 2
+    },
+    {
+      "text": "RFP",
+      "sample_slide": 3
+    },
+    {
+      "text": "DQ",
+      "sample_slide": 4
+    },
+    {
+      "text": "DFM",
+      "sample_slide": 4
+    },
+    {
+      "text": "lock-down",
+      "sample_slide": 4
+    },
+    {
+      "text": "SAT: 22 days",
+      "sample_slide": 4
+    },
+    {
+      "text": "Machine set up",
+      "sample_slide": 4
+    },
+    {
+      "text": "Machine/Fixture IQC",
+      "sample_slide": 4
+    },
+    {
+      "text": "Machine calibration/Dry run",
+      "sample_slide": 4
+    },
+    {
+      "text": " SAT+LQ:36 days",
+      "sample_slide": 4
+    },
+    {
+      "text": "MQ",
+      "sample_slide": 4
+    },
+    {
+      "text": "4 weeks",
+      "sample_slide": 4
+    },
+    {
+      "text": "OEE Bring up",
+      "sample_slide": 4
+    },
+    {
+      "text": "Mass production",
+      "sample_slide": 4
+    },
+    {
+      "text": "Process Machine",
+      "sample_slide": 4
+    },
+    {
+      "text": "LQ: 14 days",
+      "sample_slide": 4
+    },
+    {
+      "text": "Machine FAI &CPK",
+      "sample_slide": 4
+    },
+    {
+      "text": "Equipment Function",
+      "sample_slide": 4
+    },
+    {
+      "text": "1. BG assemble with SP-E/SP-W/Fang High Temp HAF in automatic assembly line.",
+      "sample_slide": 4
+    },
+    {
+      "text": "2. The transfer module takes BG to the fixture and unloads the finished product to the convey line, TRACE, PDCA, OEE meet the relevant requirements.",
+      "sample_slide": 4
+    },
+    {
+      "text": "X | Mesh to BG Assembly: RFP",
+      "sample_slide": 4
+    },
+    {
+      "text": "Mesh",
+      "sample_slide": 4
+    },
+    {
+      "text": "HAF",
+      "sample_slide": 4
+    },
+    {
+      "text": "Mesh HAF sub",
+      "sample_slide": 4
+    },
+    {
+      "text": "BG sub",
+      "sample_slide": 4
+    },
+    {
+      "text": "BG",
+      "sample_slide": 4
+    },
+    {
+      "text": "Mesh with PSA",
+      "sample_slide": 4
+    },
+    {
+      "text": "HAF version",
+      "sample_slide": 4
+    },
+    {
+      "text": "PSA version",
+      "sample_slide": 4
+    },
+    {
+      "text": "Module Details -Mesh assy to HAF&PSA&BG machine",
+      "sample_slide": 5
+    },
+    {
+      "text": "1500 mm",
+      "sample_slide": 6
+    },
+    {
+      "text": "1900 mm",
+      "sample_slide": 6
+    },
+    {
+      "text": "Remarks:",
+      "sample_slide": 6
+    },
+    {
+      "text": "1.Voltage: AC220V2.Power: 7000W3.Air Source: 0.5-0.7Mpa4.Manpower rate: 1 Person",
+      "sample_slide": 6
+    },
+    {
+      "text": "Front view",
+      "sample_slide": 6
+    },
+    {
+      "text": "TOP view",
+      "sample_slide": 6
+    },
+    {
+      "text": "Axis view",
+      "sample_slide": 6
+    },
+    {
+      "text": "Side view",
+      "sample_slide": 6
+    },
+    {
+      "text": " X | Mesh to BG Assembly : Machine Overview",
+      "sample_slide": 6
+    },
+    {
+      "text": "Grating",
+      "sample_slide": 6
+    },
+    {
+      "text": "X | Mesh to BG Assembly: Machine Overview",
+      "sample_slide": 7
+    },
+    {
+      "text": " BG upper CCD module & pressing module *1",
+      "sample_slide": 7
+    },
+    {
+      "text": "Right robot*1",
+      "sample_slide": 7
+    },
+    {
+      "text": "Loading/unloading position1 *1",
+      "sample_slide": 7
+    },
+    {
+      "text": "Lower CCD *2",
+      "sample_slide": 7
+    },
+    {
+      "text": "Left robot *1",
+      "sample_slide": 7
+    },
+    {
+      "text": "Loading/unloading position2/3 *1",
+      "sample_slide": 7
+    },
+    {
+      "text": "Stripping module *1",
+      "sample_slide": 7
+    },
+    {
+      "text": "Stock *1",
+      "sample_slide": 7
+    },
+    {
+      "text": "Transfer module *1",
+      "sample_slide": 7
+    },
+    {
+      "text": "X | Mesh to BG Assembly : Mesh assembly Machine ",
+      "sample_slide": 8
+    },
+    {
+      "text": "Mesh to HAF",
+      "sample_slide": 8
+    },
+    {
+      "text": "Mesh HAF sub/ Mesh with PSA to BG",
+      "sample_slide": 8
+    },
+    {
+      "text": "6)OP takes out carrier with assembled mesh and put in  cartridge for using in the next process",
+      "sample_slide": 9
+    },
+    {
+      "text": "5) Fixture moves to standby position",
+      "sample_slide": 9
+    },
+    {
+      "text": "4) CCD Inspection on assembled mesh",
+      "sample_slide": 9
+    },
+    {
+      "text": "3) Assemble HAF to mesh ",
+      "sample_slide": 9
+    },
+    {
+      "text": "1) OP inputs HAF in the fixture",
+      "sample_slide": 9
+    },
+    {
+      "text": "2) CCD position on HAF",
+      "sample_slide": 9
+    },
+    {
+      "text": "X | Mesh to BG Assembly:  Process Flow-Mesh assy to HAF",
+      "sample_slide": 9
+    },
+    {
+      "text": "4) CCD correction on Mesh",
+      "sample_slide": 9
+    },
+    {
+      "text": "3) The nozzle picks up Mesh",
+      "sample_slide": 9
+    },
+    {
+      "text": "1) OP puts carrier with Mesh in Cartridge",
+      "sample_slide": 9
+    },
+    {
+      "text": "2) Carrier is pushed out by cylinder",
+      "sample_slide": 9
+    },
+    {
+      "text": "6) CCD Inspection on Mesh",
+      "sample_slide": 10
+    },
+    {
+      "text": "5) Pressure holding on Mesh with weight",
+      "sample_slide": 10
+    },
+    {
+      "text": "4) Assemble Mesh HAF sub/ Mesh with PSA to BG",
+      "sample_slide": 10
+    },
+    {
+      "text": "3) CCD position on BG",
+      "sample_slide": 10
+    },
+    {
+      "text": "2) CCD correction on Mesh HAF sub/ Mesh with PSA",
+      "sample_slide": 10
+    },
+    {
+      "text": "1) The nozzle pick up Mesh HAF sub/ Mesh with PSA from Mesh loading mechanism",
+      "sample_slide": 10
+    },
+    {
+      "text": "1) OP inputs BG in the fixture",
+      "sample_slide": 10
+    },
+    {
+      "text": "7) Fixture move to standby position",
+      "sample_slide": 10
+    },
+    {
+      "text": "2) Fixture move to scanning position for barcode scanning",
+      "sample_slide": 10
+    },
+    {
+      "text": "X | Mesh to BG Assembly:  Process Flow-Mesh HAF sub/ Mesh with PSA assy to BG",
+      "sample_slide": 10
+    },
+    {
+      "text": "X | Mesh to BG Assembly:Module Details - Fixture",
+      "sample_slide": 11
+    },
+    {
+      "text": "  Positioning pin *6",
+      "sample_slide": 11
+    },
+    {
+      "text": " Working position1",
+      "sample_slide": 11
+    },
+    {
+      "text": " Working position2/3",
+      "sample_slide": 11
+    },
+    {
+      "text": "Sheet transfer suction nozzle",
+      "sample_slide": 12
+    },
+    {
+      "text": "Tray transplanting",
+      "sample_slide": 12
+    },
+    {
+      "text": "Tray movement",
+      "sample_slide": 12
+    },
+    {
+      "text": "direction ",
+      "sample_slide": 12
+    },
+    {
+      "text": "Sheet mesh material movement direction",
+      "sample_slide": 12
+    },
+    {
+      "text": "Lifting cylinder drives suction nozzle moves up or down",
+      "sample_slide": 12
+    },
+    {
+      "text": "Y axis movement direction",
+      "sample_slide": 12
+    },
+    {
+      "text": "X | Mesh to BG Assembly: Mesh Assy Module - Mesh Feeding Device",
+      "sample_slide": 12
+    },
+    {
+      "text": "Modules",
+      "sample_slide": 12
+    },
+    {
+      "text": "Name",
+      "sample_slide": 12
+    },
+    {
+      "text": "Model",
+      "sample_slide": 12
+    },
+    {
+      "text": "Vendor",
+      "sample_slide": 12
+    },
+    {
+      "text": "Qty",
+      "sample_slide": 12
+    },
+    {
+      "text": "1k model",
+      "sample_slide": 12
+    },
+    {
+      "text": "Mesh loading",
+      "sample_slide": 12
+    },
+    {
+      "text": "Dust-free sliding table",
+      "sample_slide": 12
+    },
+    {
+      "text": "GCH5-L10-150-BL-Y10-C4",
+      "sample_slide": 12
+    },
+    {
+      "text": "TOYO",
+      "sample_slide": 12
+    },
+    {
+      "text": "Class10",
+      "sample_slide": 12
+    },
+    {
+      "text": "GCH5-L10-150-BC-Y10-C4",
+      "sample_slide": 12
+    },
+    {
+      "text": "GCH12-L20-750-BC-Y40-C4",
+      "sample_slide": 12
+    },
+    {
+      "text": "Slide cylinder",
+      "sample_slide": 12
+    },
+    {
+      "text": "MXQ8-20A-M9NL",
+      "sample_slide": 12
+    },
+    {
+      "text": "SMC",
+      "sample_slide": 12
+    },
+    {
+      "text": "Upper CCD  for mesh",
+      "sample_slide": 12
+    },
+    {
+      "text": "positioning  ",
+      "sample_slide": 12
+    },
+    {
+      "text": "Stripping mechanism",
+      "sample_slide": 12
+    },
+    {
+      "text": "CCD positioning/re-inspection camera*3",
+      "sample_slide": 13
+    },
+    {
+      "text": "Configuration",
+      "sample_slide": 13
+    },
+    {
+      "text": "Camera",
+      "sample_slide": 13
+    },
+    {
+      "text": "Pixel",
+      "sample_slide": 13
+    },
+    {
+      "text": "5 million",
+      "sample_slide": 13
+    },
+    {
+      "text": "View",
+      "sample_slide": 13
+    },
+    {
+      "text": "14.25mm*10.7mm",
+      "sample_slide": 13
+    },
+    {
+      "text": "Resolution",
+      "sample_slide": 13
+    },
+    {
+      "text": "2592(H)×1944(V)",
+      "sample_slide": 13
+    },
+    {
+      "text": "X | Mesh to BG Assembly: Mesh Assy Module - BG Position/Mesh Inspection Camera",
+      "sample_slide": 13
+    },
+    {
+      "text": "HAF position CCD",
+      "sample_slide": 14
+    },
+    {
+      "text": "CCD*2",
+      "sample_slide": 14
+    },
+    {
+      "text": "Lens *2",
+      "sample_slide": 14
+    },
+    {
+      "text": "Ring light source *2",
+      "sample_slide": 14
+    },
+    {
+      "text": "Coaxial light source *2",
+      "sample_slide": 14
+    },
+    {
+      "text": "X | Mesh to BG Assembly: Module Details - Upper & Lower CCD Modules",
+      "sample_slide": 14
+    },
+    {
+      "text": "X | Mesh to BG Assembly: Module Details - Assembly Module",
+      "sample_slide": 15
+    },
+    {
+      "text": "Connecting flange",
+      "sample_slide": 15
+    },
+    {
+      "text": "Spring",
+      "sample_slide": 15
+    },
+    {
+      "text": "Model: UL6-20, ",
+      "sample_slide": 15
+    },
+    {
+      "text": "Spring coefficient: 0.98N/mm",
+      "sample_slide": 15
+    },
+    {
+      "text": "Temperature sensing wire",
+      "sample_slide": 15
+    },
+    {
+      "text": "Linear guideway",
+      "sample_slide": 15
+    },
+    {
+      "text": "Hard limit",
+      "sample_slide": 15
+    },
+    {
+      "text": "Heating rod",
+      "sample_slide": 15
+    },
+    {
+      "text": "Model：D6-L32",
+      "sample_slide": 15
+    },
+    {
+      "text": "Power：80W",
+      "sample_slide": 15
+    },
+    {
+      "text": "Mesh Suction nozzle",
+      "sample_slide": 15
+    },
+    {
+      "text": "Material :S136",
+      "sample_slide": 15
+    },
+    {
+      "text": "Pressure sensor",
+      "sample_slide": 15
+    },
+    {
+      "text": "Demand pressure value：",
+      "sample_slide": 15
+    },
+    {
+      "text": "The HAF area of Mesh：3.64mm²",
+      "sample_slide": 15
+    },
+    {
+      "text": "Pressure range：2~15Bar",
+      "sample_slide": 15
+    },
+    {
+      "text": "The converted pressure range：0.74~5.55N",
+      "sample_slide": 15
+    },
+    {
+      "text": "Spring model：UL6-20",
+      "sample_slide": 15
+    },
+    {
+      "text": "Spring coefficient：0.98N/mm",
+      "sample_slide": 15
+    },
+    {
+      "text": "Maximum compression amount：9mmTheoretical spring force：0~8.82N",
+      "sample_slide": 15
+    },
+    {
+      "text": "Mesh on Suction nozzle",
+      "sample_slide": 15
+    },
+    {
+      "text": "Jacking cylinder",
+      "sample_slide": 16
+    },
+    {
+      "text": "1. The nozzle core drops to the middle of the mesh ",
+      "sample_slide": 16
+    },
+    {
+      "text": "2.Lifting cylinder to lift up the mesh",
+      "sample_slide": 16
+    },
+    {
+      "text": "3.Nozzle cover drops down",
+      "sample_slide": 16
+    },
+    {
+      "text": "4.Pick up mesh by nozzle",
+      "sample_slide": 16
+    },
+    {
+      "text": "Nozzle core",
+      "sample_slide": 16
+    },
+    {
+      "text": "X | Mesh to BG Assembly:Module Details - Assembly Module",
+      "sample_slide": 16
+    },
+    {
+      "text": " Gantry frame",
+      "sample_slide": 17
+    },
+    {
+      "text": "There are three kinds of weights: 20g*1,50g*1,100g*1, 200g*1 and 400g*3, which can be matched according to the situation, Currently setting 0.37kg，Adjustable Range: 0.02kg~1.57kg",
+      "sample_slide": 17
+    },
+    {
+      "text": "Required Pressure Value:",
+      "sample_slide": 17
+    },
+    {
+      "text": "HAF area of the Mesh product: 3.64 mm²",
+      "sample_slide": 17
+    },
+    {
+      "text": "Pressure: 10 Bar",
+      "sample_slide": 17
+    },
+    {
+      "text": "Converted force: 3.7 N",
+      "sample_slide": 17
+    },
+    {
+      "text": "Heating rod temperature adjustment range: 1~200℃",
+      "sample_slide": 17
+    },
+    {
+      "text": "Model ：lamci2405nei-D6-L25-C-180°-V36-W45-DP10-XG90°-GC25-GT27-HT-MH-WT-TG1m-YM1.5m-A0608",
+      "sample_slide": 17
+    },
+    {
+      "text": "Counteracting the pressure head's dead weight:",
+      "sample_slide": 17
+    },
+    {
+      "text": "Spring adjustable force range: 2N ~ 9.8N",
+      "sample_slide": 17
+    },
+    {
+      "text": "Pressure head dead weight: 5.5N (550g)",
+      "sample_slide": 17
+    },
+    {
+      "text": "The spring force is fully capable of counteracting the pressure head's dead weight. Therefore, the required additional pressure weight for the bonding head can be achieved by simply stacking counterweights.",
+      "sample_slide": 17
+    },
+    {
+      "text": "Cylinder",
+      "sample_slide": 17
+    },
+    {
+      "text": "Slider",
+      "sample_slide": 17
+    },
+    {
+      "text": "Total weight(g)",
+      "sample_slide": 17
+    },
+    {
+      "text": "weight(g)",
+      "sample_slide": 17
+    },
+    {
+      "text": "X | Mesh to BG Assembly: Module Details - Pressure Holding Mechanism",
+      "sample_slide": 17
+    },
+    {
+      "text": "X | Mesh to BG Assembly: Module Details - Pressure Holding Mechanism- DOE Pressure Head",
+      "sample_slide": 18
+    },
+    {
+      "text": "The pressure head retracts by 0.05 mm, aligning its outer contour with the HAF.",
+      "sample_slide": 18
+    },
+    {
+      "text": "X | Mesh to BG Assembly:  Module Details - Mesh Loading Module",
+      "sample_slide": 19
+    },
+    {
+      "text": "Loading Lifting Module *1",
+      "sample_slide": 19
+    },
+    {
+      "text": "transfer module *1",
+      "sample_slide": 19
+    },
+    {
+      "text": "Tray Convey Module *1",
+      "sample_slide": 19
+    },
+    {
+      "text": " Mesh Loading Module *1",
+      "sample_slide": 19
+    },
+    {
+      "text": "2. Tray clamper pulls one Mesh tray out of the Cartridge",
+      "sample_slide": 19
+    },
+    {
+      "text": "3. The nozzle suction pick up Mesh liner",
+      "sample_slide": 19
+    },
+    {
+      "text": "4. Nozzle put Mesh liner on the Mesh loading plate",
+      "sample_slide": 19
+    },
+    {
+      "text": "5. Cover plate move over and press on Mesh liner for Mesh feeding",
+      "sample_slide": 19
+    },
+    {
+      "text": "1. Mesh tray loaded into Cartridge",
+      "sample_slide": 19
+    },
+    {
+      "text": "6. When Mesh runs out, the nozzle removes the Mesh liner",
+      "sample_slide": 19
+    },
+    {
+      "text": "7. Nozzle places Mesh liner into the Mesh liner drop bin",
+      "sample_slide": 19
+    },
+    {
+      "text": "  Loading Lifting module *1",
+      "sample_slide": 20
+    },
+    {
+      "text": "Mesh Tray Cartridge *1 ",
+      "sample_slide": 20
+    },
+    {
+      "text": " Mesh Tray",
+      "sample_slide": 20
+    },
+    {
+      "text": "  Mesh Liner Nozzle *1 ",
+      "sample_slide": 20
+    },
+    {
+      "text": "Mesh Liner Drop box *1 ",
+      "sample_slide": 20
+    },
+    {
+      "text": "A",
+      "sample_slide": 21
+    },
+    {
+      "text": "A - A ",
+      "sample_slide": 21
+    },
+    {
+      "text": "Reset Spring",
+      "sample_slide": 21
+    },
+    {
+      "text": "Pin",
+      "sample_slide": 21
+    },
+    {
+      "text": "Pin Guide Holder",
+      "sample_slide": 21
+    },
+    {
+      "text": "Mesh Lifting state",
+      "sample_slide": 21
+    },
+    {
+      "text": "Cover Plate *1",
+      "sample_slide": 21
+    },
+    {
+      "text": "Servo Motor*1 ",
+      "sample_slide": 21
+    },
+    {
+      "text": "Cylinder *4",
+      "sample_slide": 21
+    },
+    {
+      "text": "X | Mesh to BG Assembly - TA",
+      "sample_slide": 22
+    },
+    {
+      "text": "X evaluate TA- Mesh to HAF ",
+      "sample_slide": 22
+    },
+    {
+      "text": "Station",
+      "sample_slide": 22
+    },
+    {
+      "text": "Description",
+      "sample_slide": 22
+    },
+    {
+      "text": "Upper ",
+      "sample_slide": 22
+    },
+    {
+      "text": "Lower",
+      "sample_slide": 22
+    },
+    {
+      "text": "Comments",
+      "sample_slide": 22
+    },
+    {
+      "text": "Mesh to  HAF",
+      "sample_slide": 22
+    },
+    {
+      "text": "CCD-mesh",
+      "sample_slide": 22
+    },
+    {
+      "text": "2 pixel variability",
+      "sample_slide": 22
+    },
+    {
+      "text": "CCD-lower HAF",
+      "sample_slide": 22
+    },
+    {
+      "text": "Assy Motion",
+      "sample_slide": 22
+    },
+    {
+      "text": "Module repeat accuracy",
+      "sample_slide": 22
+    },
+    {
+      "text": "Summary:",
+      "sample_slide": 22
+    },
+    {
+      "text": "(+) Tol",
+      "sample_slide": 22
+    },
+    {
+      "text": "(-) Tol",
+      "sample_slide": 22
+    },
+    {
+      "text": "worst case",
+      "sample_slide": 22
+    },
+    {
+      "text": "Assy  RSS",
+      "sample_slide": 22
+    },
+    {
+      "text": "1.5RSS",
+      "sample_slide": 22
+    },
+    {
+      "text": "X evaluate TA- Mesh to BG",
+      "sample_slide": 23
+    },
+    {
+      "text": "Mesh to BG",
+      "sample_slide": 23
+    },
+    {
+      "text": "CCD-Mesh",
+      "sample_slide": 23
+    },
+    {
+      "text": "CCD-BG",
+      "sample_slide": 23
+    },
+    {
+      "text": "Robot repeat accuracy",
+      "sample_slide": 23
+    },
+    {
+      "text": "X | Mesh to BG Assembly: Module Details – Upper HAF positioning CCD",
+      "sample_slide": 24
+    },
+    {
+      "text": "One shot: CCD takes a picture of the right side of BG, captures the right edge of BG (red straight line) and the mesh hole (red circle) as the Angle and position reference of the fit",
+      "sample_slide": 24
+    },
+    {
+      "text": "Camera:SCI-CM600-GLP118-01                1pcsLens: SCI-A5M04-110                  1pcsCoaxial light source: SCI-CTD50-W         1pcsRing light source: SCI-RLA745-W             1pcsCCD parameters:",
+      "sample_slide": 24
+    },
+    {
+      "text": "6 megapixel camera ",
+      "sample_slide": 24
+    },
+    {
+      "text": "0.4 telecentric lens",
+      "sample_slide": 24
+    },
+    {
+      "text": "Camera field size: 33.51mm*22.34mm",
+      "sample_slide": 24
+    },
+    {
+      "text": "Pixel accuracy: 0.011mm/pixel",
+      "sample_slide": 24
+    },
+    {
+      "text": "All light sources height are adjustable:±10mm",
+      "sample_slide": 24
+    },
+    {
+      "text": "220mm",
+      "sample_slide": 24
+    },
+    {
+      "text": "SCI-CM600-GLP118-01",
+      "sample_slide": 24
+    },
+    {
+      "text": "SCI-A5M04-110",
+      "sample_slide": 24
+    },
+    {
+      "text": "SCI-CTD50-W",
+      "sample_slide": 24
+    },
+    {
+      "text": "SCI-RLA745-W",
+      "sample_slide": 24
+    },
+    {
+      "text": "140mm±10mm",
+      "sample_slide": 24
+    },
+    {
+      "text": "110mm±10mm",
+      "sample_slide": 24
+    },
+    {
+      "text": "X | Mesh to BG Assembly: Module Details – Upper CCD",
+      "sample_slide": 25
+    },
+    {
+      "text": "Camera:SCI-CM600-GLP118-01                2pcsLens: SCI-ADW0220-220-02                  2pcsCoaxial light source: SCI-CTD80-W         2pcsRing light source: SCI-RLA745-W             2pcsCCD parameters:",
+      "sample_slide": 25
+    },
+    {
+      "text": "Upper CCD Capture BG",
+      "sample_slide": 25
+    },
+    {
+      "text": "C1(X,Y)",
+      "sample_slide": 25
+    },
+    {
+      "text": "L1",
+      "sample_slide": 25
+    },
+    {
+      "text": "SCI-ADW0220-220-02",
+      "sample_slide": 25
+    },
+    {
+      "text": "SCI-CTD80-W",
+      "sample_slide": 25
+    },
+    {
+      "text": "X | Mesh to BG Assembly: Module Details - Lower correction CCD",
+      "sample_slide": 26
+    },
+    {
+      "text": "Lower CCD Capture Mesh",
+      "sample_slide": 26
+    },
+    {
+      "text": "The lower CCD first grabs the lower edge of the mesh (yellow line), which is used as the Angle reference for mesh correction and is used to determine the Angle of the mesh",
+      "sample_slide": 26
+    },
+    {
+      "text": "Then grab the circle feature (red circle) at the root of the mesh boss as the XY reference for mesh correction, which is used to confirm the position of the mesh",
+      "sample_slide": 26
+    },
+    {
+      "text": "Camera:SCI-CM600-GLP6011-01            2pcsLens:SCI-A5M04-65A                     2pcsRing light source1: SCI-RLA790-B       2pcs",
+      "sample_slide": 26
+    },
+    {
+      "text": "Ring light source2: SCI-RLA730-B       2pcsCCD parameters:",
+      "sample_slide": 26
+    },
+    {
+      "text": "6 megapixel camera, ",
+      "sample_slide": 26
+    },
+    {
+      "text": "Camera field size: 18.43mm*12.30mm",
+      "sample_slide": 26
+    },
+    {
+      "text": "Pixel accuracy: 0.006mm/pixel",
+      "sample_slide": 26
+    },
+    {
+      "text": "65mm",
+      "sample_slide": 26
+    },
+    {
+      "text": "SCI-A5M04-65A",
+      "sample_slide": 26
+    },
+    {
+      "text": "Mic2 Mesh",
+      "sample_slide": 26
+    },
+    {
+      "text": "SCI-RLA730-B",
+      "sample_slide": 26
+    },
+    {
+      "text": "15mm",
+      "sample_slide": 26
+    },
+    {
+      "text": "SCI-RLA790-B",
+      "sample_slide": 26
+    },
+    {
+      "text": "Retrofit",
+      "sample_slide": 27
+    },
+    {
+      "text": "X | Mesh to BG Assembly: Retrofit Items ",
+      "sample_slide": 28
+    },
+    {
+      "text": "New",
+      "sample_slide": 28
+    },
+    {
+      "text": "ECN",
+      "sample_slide": 28
+    },
+    {
+      "text": "Wear out",
+      "sample_slide": 28
+    },
+    {
+      "text": "Optimization",
+      "sample_slide": 28
+    },
+    {
+      "text": "Item",
+      "sample_slide": 28
+    },
+    {
+      "text": "D3y Mic2 Mesh to BG Assembly Machine",
+      "sample_slide": 28
+    },
+    {
+      "text": "X EVT Mesh to BG Assembly Machine",
+      "sample_slide": 28
+    },
+    {
+      "text": "Machine",
+      "sample_slide": 28
+    },
+    {
+      "text": "Module",
+      "sample_slide": 28
+    },
+    {
+      "text": "Type",
+      "sample_slide": 28
+    },
+    {
+      "text": "Brand",
+      "sample_slide": 28
+    },
+    {
+      "text": "PIC.",
+      "sample_slide": 28
+    },
+    {
+      "text": "ECN/",
+      "sample_slide": 28
+    },
+    {
+      "text": "NEW",
+      "sample_slide": 28
+    },
+    {
+      "text": "Ratio",
+      "sample_slide": 28
+    },
+    {
+      "text": "Reason",
+      "sample_slide": 28
+    },
+    {
+      "text": "Qty/per",
+      "sample_slide": 28
+    },
+    {
+      "text": "line",
+      "sample_slide": 28
+    },
+    {
+      "text": "Risk level",
+      "sample_slide": 28
+    },
+    {
+      "text": "Part L/T (days)",
+      "sample_slide": 28
+    },
+    {
+      "text": "Remark",
+      "sample_slide": 28
+    },
+    {
+      "text": "Mesh to HAF&PSA&BG assy",
+      "sample_slide": 28
+    },
+    {
+      "text": "Loading/unloading module position1",
+      "sample_slide": 28
+    },
+    {
+      "text": "Machined part",
+      "sample_slide": 28
+    },
+    {
+      "text": "SJ",
+      "sample_slide": 28
+    },
+    {
+      "text": "Mesh HAF changed according to latest drawing, positon1 fixture need NB.",
+      "sample_slide": 28
+    },
+    {
+      "text": "High",
+      "sample_slide": 28
+    },
+    {
+      "text": "Loading/Unloading Module Position2/3",
+      "sample_slide": 28
+    },
+    {
+      "text": "BG dimension changed according to latest drawing, positon2/3 fixture need NB.",
+      "sample_slide": 28
+    },
+    {
+      "text": "Pressing module",
+      "sample_slide": 28
+    },
+    {
+      "text": "Mesh changed according to latest drawing, pressing module changed and add heating function.",
+      "sample_slide": 28
+    },
+    {
+      "text": "Left robot module",
+      "sample_slide": 28
+    },
+    {
+      "text": "Mesh changed according to latest drawing, left assembly robot assembly head need NB, and upper CCD move to left robot.",
+      "sample_slide": 28
+    },
+    {
+      "text": "Right robot module",
+      "sample_slide": 28
+    },
+    {
+      "text": "Mesh changed according to latest drawing, right assembly robot need be modified.",
+      "sample_slide": 28
+    },
+    {
+      "text": "Stripping module",
+      "sample_slide": 28
+    },
+    {
+      "text": "Product changed, stripping module need NB.",
+      "sample_slide": 28
+    },
+    {
+      "text": "MESH tray",
+      "sample_slide": 28
+    },
+    {
+      "text": "Mesh changed according to latest drawing, Mesh tray need NB",
+      "sample_slide": 28
+    },
+    {
+      "text": "Rack",
+      "sample_slide": 28
+    },
+    {
+      "text": "The automatic machine was changed to a single machine, and protective sheet metal and buttons were added to the side of the frame.",
+      "sample_slide": 28
+    },
+    {
+      "text": "Retrofit Reason:",
+      "sample_slide": 29
+    },
+    {
+      "text": "D3y",
+      "sample_slide": 29
+    },
+    {
+      "text": "X EVT",
+      "sample_slide": 29
+    },
+    {
+      "text": "X | Mesh to BG Assembly: Retrofit Items  - Loading/Unloading Module Position1",
+      "sample_slide": 29
+    },
+    {
+      "text": "X | Mesh to BG Assembly: Retrofit Items  - Loading/Unloading Module Position2/3",
+      "sample_slide": 30
+    },
+    {
+      "text": "X | Mesh to BG Assembly: Retrofit Items  - Pressing Module",
+      "sample_slide": 31
+    },
+    {
+      "text": "X | Mesh to BG Assembly: Retrofit Items  - Left Robot",
+      "sample_slide": 32
+    },
+    {
+      "text": "X | Mesh to BG Assembly: Retrofit Items  - Right Robot",
+      "sample_slide": 33
+    },
+    {
+      "text": "X | Mesh to BG Assembly: Retrofit Items  - Stripping Module",
+      "sample_slide": 34
+    },
+    {
+      "text": "Detail explanation:",
+      "sample_slide": 35
+    },
+    {
+      "text": "X | Mesh to BG Assembly: Retrofit Items  - Mesh Tray",
+      "sample_slide": 35
+    },
+    {
+      "text": "X | Mesh to BG Assembly: Retrofit Items  - Rack",
+      "sample_slide": 36
+    },
+    {
+      "text": "The End",
+      "sample_slide": 37
+    },
+    {
+      "text": "Thanks",
+      "sample_slide": 37
+    }
+  ]
+}
