@@ -7,7 +7,6 @@ import os
 import re
 import wave
 from collections import Counter
-from difflib import get_close_matches
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -32,7 +31,6 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output-dir", required=True)
     parser.add_argument("--result-file", help="输出 JSON，默认 output-dir/signals.json")
     parser.add_argument("--whisper-model", default=os.getenv("VCB_WHISPER_MODEL", "small"))
-    parser.add_argument("--quality", default="high")
     return parser.parse_args()
 
 
@@ -75,162 +73,6 @@ def _parse_subtitle_file(path: Path) -> List[Dict[str, Any]]:
             }
         )
     return chunks
-
-
-def _canonical_term(term: str) -> str:
-    cleaned = re.sub(r"\s+", " ", str(term or "")).strip()
-    if not cleaned:
-        return ""
-    mapping = {
-        "ai": "AI",
-        "prompt": "Prompt",
-        "prompts": "Prompt",
-        "chatgpt": "ChatGPT",
-        "claude": "Claude",
-        "deepseek": "DeepSeek",
-        "deep seek": "DeepSeek",
-        "gemini": "Gemini",
-        "gemini flash": "Gemini Flash",
-        "reddit": "Reddit",
-        "google": "Google",
-        "capcut": "CapCut",
-        "cap cut": "CapCut",
-        "pr": "PR",
-        "gpt": "GPT",
-    }
-    return mapping.get(cleaned.lower(), cleaned)
-
-
-def _extract_term_hints(fetch: Dict[str, Any]) -> List[str]:
-    post = fetch.get("post_content", {}) if isinstance(fetch.get("post_content"), dict) else {}
-    texts: List[str] = [
-        str(post.get("title", "")),
-        str(post.get("body", "")),
-    ]
-    tags = post.get("tags", [])
-    if isinstance(tags, list):
-        texts.extend(str(tag) for tag in tags[:10])
-
-    combined = " ".join(texts)
-    hints: Dict[str, str] = {}
-    ai_context = bool(re.search(r"AI|人工智能|提示词|prompt|模型|大模型", combined, re.IGNORECASE))
-    if ai_context:
-        for item in [
-            "AI",
-            "Prompt",
-            "Google",
-            "ChatGPT",
-            "Claude",
-            "DeepSeek",
-            "Gemini",
-            "Gemini Flash",
-            "Reddit",
-        ]:
-            hints[item.lower()] = item
-
-    for raw in re.findall(r"[A-Za-z][A-Za-z0-9+#.\-]{1,24}", combined):
-        canonical = _canonical_term(raw)
-        if 2 <= len(canonical) <= 24:
-            hints[canonical.lower()] = canonical
-
-    return list(hints.values())[:16]
-
-
-def _build_asr_prompt(fetch: Dict[str, Any], glossary: List[str]) -> str:
-    post = fetch.get("post_content", {}) if isinstance(fetch.get("post_content"), dict) else {}
-    title = str(post.get("title", "")).strip()
-    tags = post.get("tags", []) if isinstance(post.get("tags", []), list) else []
-    tag_text = "、".join(str(tag) for tag in tags[:8] if str(tag).strip())
-
-    pieces: List[str] = []
-    if title:
-        pieces.append(f"标题：{title}")
-    if tag_text:
-        pieces.append(f"标签：{tag_text}")
-    if glossary:
-        pieces.append("请尽量准确识别这些术语：" + ", ".join(glossary[:12]))
-    return "；".join(pieces)[:400]
-
-
-def _normalize_transcript_text(text: str, glossary: List[str]) -> str:
-    text = re.sub(r"\s+", " ", str(text or "")).strip()
-    if not text:
-        return ""
-
-    hard_replacements = {
-        r"(?i)\bai\b": "AI",
-        r"(?i)\bprop\b": "Prompt",
-        r"(?i)\bprompts?\b": "Prompt",
-        r"(?i)\breddit\b": "Reddit",
-        r"(?i)\bcap cut\b": "CapCut",
-        r"(?i)\bdeep seek\b": "DeepSeek",
-        r"(?i)\bdeep city\b": "DeepSeek",
-        r"(?i)\bgerman flash\b": "Gemini Flash",
-        r"(?i)\bgemini flash\b": "Gemini Flash",
-    }
-    for pattern, replacement in hard_replacements.items():
-        text = re.sub(pattern, replacement, text)
-
-    glossary_map = {item.lower(): item for item in glossary if item}
-    if glossary_map:
-        alpha_tokens = sorted(set(re.findall(r"[A-Za-z][A-Za-z0-9+#.\-]{2,24}", text)), key=len, reverse=True)
-        for token in alpha_tokens:
-            lower = token.lower()
-            canonical = glossary_map.get(lower)
-            if not canonical:
-                matches = get_close_matches(lower, list(glossary_map.keys()), n=1, cutoff=0.8)
-                if matches:
-                    canonical = glossary_map[matches[0]]
-            if canonical and canonical != token:
-                text = re.sub(rf"(?<![A-Za-z]){re.escape(token)}(?![A-Za-z])", canonical, text)
-
-    return re.sub(r"\s+", " ", text).strip()
-
-
-def _should_merge_transcript(prev: Dict[str, Any], cur: Dict[str, Any]) -> bool:
-    if str(prev.get("source", "")) != str(cur.get("source", "")):
-        return False
-    prev_text = str(prev.get("text", "")).strip()
-    cur_text = str(cur.get("text", "")).strip()
-    if not prev_text or not cur_text:
-        return False
-    if len(prev_text) + len(cur_text) > 72:
-        return False
-
-    prev_end = prev.get("end")
-    cur_start = cur.get("start")
-    if prev_end is not None and cur_start is not None:
-        try:
-            gap = float(cur_start) - float(prev_end)
-        except Exception:
-            gap = 0.0
-        if gap > 0.55:
-            return False
-
-    return len(cur_text) <= 14 or len(prev_text) <= 18 or not re.search(r"[。！？!?]$", prev_text)
-
-
-def _normalize_transcript_chunks(chunks: List[Dict[str, Any]], glossary: List[str]) -> List[Dict[str, Any]]:
-    normalized: List[Dict[str, Any]] = []
-    for raw in chunks:
-        if not isinstance(raw, dict):
-            continue
-        text = _normalize_transcript_text(str(raw.get("text", "")), glossary)
-        if not text:
-            continue
-        item = dict(raw)
-        item["text"] = text
-        if normalized and normalized[-1].get("text") == item.get("text") and normalized[-1].get("source") == item.get("source"):
-            continue
-        if normalized and _should_merge_transcript(normalized[-1], item):
-            normalized[-1]["text"] = re.sub(r"\s+", " ", f"{normalized[-1]['text']} {text}").strip()
-            normalized[-1]["end"] = item.get("end", normalized[-1].get("end"))
-            continue
-        normalized.append(item)
-
-    for idx, item in enumerate(normalized, start=1):
-        item["line"] = idx
-    return normalized
 
 
 def _ffmpeg_extract_frames(video_path: Path, frame_dir: Path) -> Tuple[List[str], List[Dict[str, Any]]]:
@@ -524,7 +366,7 @@ def _ocr_image(path: Path) -> Tuple[str, float]:
     return text, round(conf, 2)
 
 
-def _asr_with_openai(audio_path: Path, prompt: str = "") -> Tuple[List[Dict[str, Any]], List[str]]:
+def _asr_with_openai(audio_path: Path) -> Tuple[List[Dict[str, Any]], List[str]]:
     logs: List[str] = []
     chunks: List[Dict[str, Any]] = []
     if not audio_path.exists():
@@ -543,11 +385,7 @@ def _asr_with_openai(audio_path: Path, prompt: str = "") -> Tuple[List[Dict[str,
     try:
         client = OpenAI()
         with audio_path.open("rb") as f:
-            resp = client.audio.transcriptions.create(
-                model="gpt-4o-mini-transcribe",
-                file=f,
-                prompt=prompt or None,
-            )
+            resp = client.audio.transcriptions.create(model="gpt-4o-mini-transcribe", file=f)
         text = getattr(resp, "text", "") or ""
         if text.strip():
             for i, sentence in enumerate(re.split(r"(?<=[。！？!?])", text), start=1):
@@ -583,12 +421,7 @@ def _get_whisper_model(model_name: str) -> Any:
     return model
 
 
-def _asr_with_local_whisper(
-    audio_path: Path,
-    model_name: str,
-    quality: str = "high",
-    initial_prompt: str = "",
-) -> Tuple[List[Dict[str, Any]], List[str]]:
+def _asr_with_local_whisper(audio_path: Path, model_name: str) -> Tuple[List[Dict[str, Any]], List[str]]:
     logs: List[str] = []
     chunks: List[Dict[str, Any]] = []
     if not audio_path.exists():
@@ -596,16 +429,12 @@ def _asr_with_local_whisper(
 
     try:
         model = _get_whisper_model(model_name)
-        beam_size = 8 if quality.lower() == "high" else 5
         segments, info = model.transcribe(
             str(audio_path),
             language="zh",
             vad_filter=True,
             vad_parameters={"min_silence_duration_ms": 300},
-            beam_size=beam_size,
-            condition_on_previous_text=True,
-            temperature=0.0,
-            initial_prompt=initial_prompt or None,
+            beam_size=5,
         )
         idx = 1
         for seg in segments:
@@ -622,9 +451,7 @@ def _asr_with_local_whisper(
                 }
             )
             idx += 1
-        logs.append(
-            f"Local Whisper ASR 完成，模型={model_name}，质量={quality}，语言={getattr(info, 'language', 'unknown')}"
-        )
+        logs.append(f"Local Whisper ASR 完成，模型={model_name}，语言={getattr(info, 'language', 'unknown')}")
     except Exception as exc:
         logs.append(f"Local Whisper ASR 失败: {exc}")
 
@@ -1067,9 +894,6 @@ def main() -> int:
     asset_index = fetch.get("asset_index", {})
     post_content = fetch.get("post_content", {})
     engagement_metrics = fetch.get("engagement_metrics", {})
-    quality = str(fetch.get("meta", {}).get("quality", args.quality) or args.quality or "high").strip().lower()
-    glossary = _extract_term_hints(fetch)
-    asr_prompt = _build_asr_prompt(fetch, glossary)
     videos = [Path(p) for p in asset_index.get("video", []) if Path(p).exists()]
     page_image_paths = [Path(p) for p in asset_index.get("page_images", []) if Path(p).exists()]
     page_image_set = {str(p.resolve()) for p in page_image_paths}
@@ -1120,13 +944,13 @@ def main() -> int:
         logs.append(audio_log)
         if audio_path.exists() and audio_path.stat().st_size > 44:
             generated_audio.append(str(audio_path))
-            asr_chunks, asr_logs = _asr_with_openai(audio_path, asr_prompt)
+            asr_chunks, asr_logs = _asr_with_openai(audio_path)
             logs.extend(asr_logs)
             if not asr_chunks:
-                local_chunks, local_logs = _asr_with_local_whisper(audio_path, args.whisper_model, quality, asr_prompt)
+                local_chunks, local_logs = _asr_with_local_whisper(audio_path, args.whisper_model)
                 asr_chunks = local_chunks
                 logs.extend(local_logs)
-            transcript_chunks.extend(_normalize_transcript_chunks(asr_chunks, glossary))
+            transcript_chunks.extend(asr_chunks)
 
     if images:
         for idx, image in enumerate(images[:10]):
@@ -1154,11 +978,10 @@ def main() -> int:
         )
 
     for sub_path in transcripts:
-        transcript_chunks.extend(_normalize_transcript_chunks(_parse_subtitle_file(sub_path), glossary))
+        transcript_chunks.extend(_parse_subtitle_file(sub_path))
 
     meta_chunks, meta_evidence, meta_cover, post_content = _extract_from_info_json(info_json_files)
     transcript_chunks.extend(meta_chunks)
-    transcript_chunks = _normalize_transcript_chunks(transcript_chunks, glossary)
     if not post_content.get("title"):
         post_content = {
             "title": str(fetch.get("post_content", {}).get("title", "")),

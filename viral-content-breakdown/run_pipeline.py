@@ -277,8 +277,6 @@ def main() -> int:
                 str(output_dir),
                 "--result-file",
                 str(signals_file),
-                "--quality",
-                args.quality,
             ],
             "extract_signals",
             run_meta,

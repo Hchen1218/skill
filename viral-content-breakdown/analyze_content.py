@@ -130,212 +130,15 @@ def _dedupe_ideas(items: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     return deduped
 
 
-def _spoken_transcript_chunks(chunks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    spoken = [
-        item
-        for item in chunks
-        if isinstance(item, dict)
-        and str(item.get("text", "")).strip()
-        and ".info.json" not in str(item.get("source", "")).lower()
-        and not str(item.get("text", "")).startswith("标签:")
-    ]
-    spoken = spoken or [item for item in chunks if isinstance(item, dict) and str(item.get("text", "")).strip()]
-    return _split_transcript_markers(spoken)
-
-
-def _split_transcript_markers(chunks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    split_pattern = re.compile(
-        r"(?=第[一二三四五六七八九十0-9]+个(?:技巧|方法|动作|提示)?)|"
-        r"(?=OK[,，]?这也就是)|(?=这也就是我今天要分享的全部内容)|(?=欢迎在别人区告诉我)"
-    )
-    refined: List[Dict[str, Any]] = []
-    for chunk in chunks:
-        text = str(chunk.get("text", "")).strip()
-        if not text:
-            continue
-        parts = [part.strip(" ,，") for part in split_pattern.split(text) if part.strip(" ,，")]
-        if len(parts) <= 1:
-            refined.append(dict(chunk))
-            continue
-
-        start = chunk.get("start")
-        end = chunk.get("end")
-        duration = None
-        if start is not None and end is not None:
-            try:
-                duration = max(float(end) - float(start), 0.0)
-            except Exception:
-                duration = None
-
-        for idx, part in enumerate(parts):
-            item = dict(chunk)
-            item["text"] = part
-            if duration and start is not None:
-                piece = duration / max(len(parts), 1)
-                item["start"] = round(float(start) + idx * piece, 2)
-                item["end"] = round(float(start) + (idx + 1) * piece, 2)
-            refined.append(item)
-
-    for idx, item in enumerate(refined, start=1):
-        item["line"] = idx
-    return refined
-
-
-def _chunk_locator(chunk: Dict[str, Any]) -> str:
-    if chunk.get("start") is not None:
-        return f"{chunk.get('start')}s-{chunk.get('end')}s"
-    return f"line:{chunk.get('line', '')}"
-
-
-def _transcript_evidence(chunks: List[Dict[str, Any]], max_items: int = 3) -> List[Dict[str, Any]]:
-    raw: List[Dict[str, Any]] = []
-    for chunk in chunks[:max_items]:
-        raw.append(
-            {
-                "type": "timestamp" if chunk.get("start") is not None else "transcript_span",
-                "source": chunk.get("source", ""),
-                "locator": _chunk_locator(chunk),
-                "snippet": str(chunk.get("text", ""))[:180],
-                "confidence": 0.72,
-            }
-        )
-    return _normalize_evidence(raw)
-
-
-def _section_text(chunks: List[Dict[str, Any]], limit: int = 280) -> str:
-    merged = _merge_text(*(chunk.get("text", "") for chunk in chunks))
-    return merged[:limit] if merged else "内容不足"
-
-
-def _is_cta_text(text: str) -> bool:
-    return _contains_any(text, [r"欢迎|告诉我|评论区|收藏|关注|下篇|下一篇|想看|全部内容|这也就是"])
-
-
-def _tip_section_name(text: str, index: int) -> str:
-    match = re.search(r"第([一二三四五六七八九十0-9]+)个(?:技巧|方法|动作|提示)?", text)
-    if match:
-        return f"技巧{match.group(1)}"
-    return f"要点{index}"
-
-
-def _build_video_script_sections(
-    transcript_chunks: List[Dict[str, Any]],
-    evidence_pool: List[Dict[str, Any]],
-) -> List[Dict[str, Any]]:
-    spoken = _spoken_transcript_chunks(transcript_chunks)
-    if not spoken:
-        return [
-            {
-                "section": "结构识别",
-                "text": "缺少可用字幕/口播文本，无法完整切分脚本结构。",
-                "evidence": evidence_pool[:1],
-            }
-        ]
-
-    tip_starts = [
-        idx
-        for idx, chunk in enumerate(spoken)
-        if re.search(r"^第[一二三四五六七八九十0-9]+个(?:技巧|方法|动作|提示)?", str(chunk.get("text", "")))
-    ]
-
-    sections: List[Dict[str, Any]] = []
-    if len(tip_starts) >= 2:
-        opener = spoken[: tip_starts[0]]
-        if opener:
-            sections.append(
-                {
-                    "section": "强结论开场",
-                    "text": _section_text(opener, 220),
-                    "evidence": _transcript_evidence(opener),
-                }
-            )
-
-        cta_chunks: List[Dict[str, Any]] = []
-        for pos, start in enumerate(tip_starts):
-            end = tip_starts[pos + 1] if pos + 1 < len(tip_starts) else len(spoken)
-            group = spoken[start:end]
-            if pos == len(tip_starts) - 1:
-                split_idx = None
-                for rel_idx in range(max(1, len(group) - 4), len(group)):
-                    if _is_cta_text(str(group[rel_idx].get("text", ""))):
-                        split_idx = rel_idx
-                        break
-                if split_idx is not None and split_idx > 0:
-                    cta_chunks = group[split_idx:]
-                    group = group[:split_idx]
-            if group:
-                sections.append(
-                    {
-                        "section": _tip_section_name(str(group[0].get("text", "")), pos + 1),
-                        "text": _section_text(group),
-                        "evidence": _transcript_evidence(group),
-                    }
-                )
-
-        if cta_chunks:
-            sections.append(
-                {
-                    "section": "收尾互动",
-                    "text": _section_text(cta_chunks, 220),
-                    "evidence": _transcript_evidence(cta_chunks),
-                }
-            )
-        return sections
-
-    cta_idx = next(
-        (
-            idx
-            for idx in range(max(1, len(spoken) // 2), len(spoken))
-            if _is_cta_text(str(spoken[idx].get("text", "")))
-        ),
-        None,
-    )
-    if cta_idx is not None:
-        opener_end = max(1, cta_idx // 2)
-        groups = [
-            ("开场钩子", spoken[:opener_end]),
-            ("主体展开", spoken[opener_end:cta_idx]),
-            ("收尾互动", spoken[cta_idx:]),
-        ]
-        for name, group in groups:
-            if group:
-                sections.append({"section": name, "text": _section_text(group), "evidence": _transcript_evidence(group)})
-        return sections
-
-    section_size = max(1, len(spoken) // 3)
-    section_names = ["开场钩子", "主体展开", "收束/行动召唤"]
-    for idx, name in enumerate(section_names):
-        group = spoken[idx * section_size : (idx + 1) * section_size]
-        if group:
-            sections.append({"section": name, "text": _section_text(group), "evidence": _transcript_evidence(group)})
-    return sections
-
-
-def _build_video_narrative_pattern(
-    source_text: str,
-    evidence_pool: List[Dict[str, Any]],
-    script_sections: List[Dict[str, Any]] | None = None,
-) -> Dict[str, Any]:
-    script_sections = script_sections or []
+def _build_video_narrative_pattern(source_text: str, evidence_pool: List[Dict[str, Any]]) -> Dict[str, Any]:
     has_steps = _contains_any(source_text, [r"步骤|怎么做|第一|第二|第三|先.*再", r"\b1\b|\b2\b|\b3\b"])
     has_contrast = _contains_any(source_text, [r"不是.*而是", r"别再", r"你以为", r"其实", r"反而"])
     has_cta = _contains_any(source_text, [r"评论|收藏|关注|转发|下篇|想看"])
     has_case = _contains_any(source_text, [r"案例|比如|场景|客户|工作流|实测"])
-    has_listicle = sum(1 for item in script_sections if str(item.get("section", "")).startswith("技巧")) >= 2 or _contains_any(
-        source_text, [r"今天分享三个", r"第一个技巧", r"第二个技巧", r"第三个"]
-    )
-    has_quant = _contains_any(source_text, [r"\d+%", r"\d+次", r"\d+个测试", r"\d+个"])
-    has_authority = _contains_any(source_text, [r"Google|论文|研究|博士|Reddit|实验"])
 
-    if has_quant and has_listicle:
-        name = "强结论开场 -> 三点清单拆解 -> 评论区转化"
-        description = "先用大数字和研究结论抓住注意力，再按 3 个技巧逐个拆开，最后把用户推向评论区互动。"
-    elif has_contrast and has_steps:
+    if has_contrast and has_steps:
         name = "反常识开场 -> 拆步骤 -> 行动收束"
         description = "先用反直觉判断抓停留，再用步骤化讲解承接理解，最后收束到评论/收藏动作。"
-    elif has_authority and has_steps:
-        name = "权威背书开场 -> 技巧清单拆解 -> 行动收束"
-        description = "先借研究或权威来源提高可信度，再逐点给方法，结尾补互动或行动提示。"
     elif has_case and has_steps:
         name = "场景切入 -> 方法拆解 -> 结果收束"
         description = "先把问题放进具体场景，再拆成可执行动作，最后回到结果或收益。"
@@ -383,30 +186,14 @@ def _build_video_virality_drivers(
     hook_text: str,
     source_text: str,
     evidence_pool: List[Dict[str, Any]],
-    script_sections: List[Dict[str, Any]] | None = None,
 ) -> List[Dict[str, Any]]:
-    script_sections = script_sections or []
     drivers: List[Dict[str, Any]] = []
     has_contrast = _contains_any(hook_text + " " + source_text, [r"不是.*而是", r"你以为", r"其实", r"反而", r"别再"])
     has_steps = _contains_any(source_text, [r"步骤|第一|第二|第三|清单|怎么做"])
     has_case = _contains_any(source_text, [r"案例|比如|场景|工作流|客户|实测"])
     has_cta = _contains_any(source_text, [r"评论|收藏|关注|下篇|想看|转发"])
-    has_quant = _contains_any(hook_text + " " + source_text, [r"\d+%", r"\d+次", r"\d+个测试", r"\d+个"])
-    has_authority = _contains_any(source_text, [r"Google|论文|研究|博士|Reddit|实验"])
-    has_demo = _contains_any(source_text, [r"对比|普通情况下|加了一句|更详细|主动做好了分类"])
-    has_listicle = sum(1 for item in script_sections if str(item.get("section", "")).startswith("技巧")) >= 2 or _contains_any(
-        source_text, [r"今天分享三个", r"第一个技巧", r"第二个技巧", r"第三个"]
-    )
 
-    if has_quant or has_authority:
-        drivers.append(
-            {
-                "driver": "开场直接抛实验结论或量化结果，可信度和冲击力都更强",
-                "why": "大数字和权威来源会同时放大停留意愿，用户更愿意继续看后面的技巧拆解。",
-                "evidence": evidence_pool[:2],
-            }
-        )
-    elif has_contrast:
+    if has_contrast:
         drivers.append(
             {
                 "driver": "开场先给反常识或结果判断，能更快抓停留",
@@ -423,11 +210,11 @@ def _build_video_virality_drivers(
             }
         )
 
-    if has_listicle or has_steps:
+    if has_steps:
         drivers.append(
             {
-                "driver": "主体是“三个技巧”式清单结构，天然适合收藏和复述",
-                "why": "用户不需要理解复杂逻辑，只要跟着编号往下看，就能快速记住核心点。",
+                "driver": "主体按步骤或清单展开，降低理解成本",
+                "why": "拆成步骤后，用户更容易收藏，也更容易把抽象方法转成动作。",
                 "evidence": evidence_pool[1:4],
             }
         )
@@ -437,15 +224,6 @@ def _build_video_virality_drivers(
                 "driver": "中段放进具体场景或案例，抽象观点更容易被接受",
                 "why": "场景化内容会让用户更容易代入，从而提升完播和转发意愿。",
                 "evidence": evidence_pool[1:4],
-            }
-        )
-
-    if has_demo:
-        drivers.append(
-            {
-                "driver": "中段加入前后对比示例，让技巧价值被立刻看见",
-                "why": "比起只讲原理，对比演示更容易让用户相信“这个方法真有用”。",
-                "evidence": evidence_pool[2:5],
             }
         )
 
@@ -465,60 +243,28 @@ def _build_video_virality_drivers(
                 "evidence": evidence_pool[2:5],
             }
         )
-    deduped: List[Dict[str, Any]] = []
-    seen = set()
-    for item in drivers:
-        name = str(item.get("driver", "")).strip()
-        if not name or name in seen:
-            continue
-        seen.add(name)
-        deduped.append(item)
-    return deduped[:3]
+    return drivers[:3]
 
 
-def _build_video_adaptation_ideas(
-    source_text: str,
-    script_sections: List[Dict[str, Any]] | None = None,
-) -> List[Dict[str, Any]]:
-    script_sections = script_sections or []
+def _build_video_adaptation_ideas(source_text: str) -> List[Dict[str, Any]]:
     ideas: List[Dict[str, Any]] = []
     has_contrast = _contains_any(source_text, [r"不是.*而是", r"你以为", r"其实", r"反而", r"别再"])
     has_steps = _contains_any(source_text, [r"步骤|第一|第二|第三|清单|怎么做"])
     has_case = _contains_any(source_text, [r"案例|比如|场景|工作流|客户|实测"])
     has_cta = _contains_any(source_text, [r"评论|收藏|关注|下篇|想看|转发"])
-    has_quant = _contains_any(source_text, [r"\d+%", r"\d+次", r"\d+个测试", r"\d+个"])
-    has_demo = _contains_any(source_text, [r"对比|普通情况下|加了一句|更详细|主动做好了分类"])
-    has_listicle = sum(1 for item in script_sections if str(item.get("section", "")).startswith("技巧")) >= 2 or _contains_any(
-        source_text, [r"今天分享三个", r"第一个技巧", r"第二个技巧", r"第三个"]
-    )
-
-    if has_quant:
-        ideas.append(
-            _idea_item(
-                "开头继续保留“数字 + 结果”式钩子，但数字换成你自己领域里的真实实验或案例。",
-                "用户最容易被可量化结果吸引，比空泛的“很好用”更能抓停留。",
-            )
-        )
-    if has_listicle or has_steps:
-        ideas.append(
-            _idea_item(
-                "主体优先改成“3 个技巧 / 3 个误区 / 3 个动作”这种编号结构。",
-                "清单式结构对短视频最友好，用户一眼就知道后面还有几个点，会更愿意继续看。",
-            )
-        )
-    if has_demo or has_case:
-        ideas.append(
-            _idea_item(
-                "中段至少放一个前后对比或实操示例，不要只讲概念。",
-                "示例会把抽象方法立刻变成“我也能用”的感觉，收藏率通常更高。",
-            )
-        )
 
     if has_contrast:
         ideas.append(
             _idea_item(
                 "保留“反常识/纠偏”式开头，但把判断换成你自己领域里的真实误区。",
                 "这样能延续高停留结构，同时避免跟原内容表达过于相似。",
+            )
+        )
+    if has_steps:
+        ideas.append(
+            _idea_item(
+                "主体继续做成 3 步或清单结构，每一步只讲一个可执行动作。",
+                "步骤化结构最容易带来收藏，因为用户能直接照着做。",
             )
         )
     if has_case:
@@ -788,7 +534,7 @@ def _fallback_report(signals: Dict[str, Any]) -> Dict[str, Any]:
     visual_specs = signals.get("visual_specs", {})
     sig = signals.get("signals", {})
 
-    transcript_chunks = _spoken_transcript_chunks(sig.get("transcript_chunks", []))
+    transcript_chunks = sig.get("transcript_chunks", [])
     ocr_hits = sig.get("ocr_hits", [])
     evidence_pool = _normalize_evidence(sig.get("evidence_pool", []))
 
@@ -801,7 +547,38 @@ def _fallback_report(signals: Dict[str, Any]) -> Dict[str, Any]:
     if not hook_text:
         hook_text = "开场信息不足，需补充人工判断"
 
-    script_sections = _build_video_script_sections(transcript_chunks, evidence_pool)
+    script_sections: List[Dict[str, Any]] = []
+    if transcript_chunks:
+        section_size = max(1, len(transcript_chunks) // 3)
+        section_names = ["开场钩子", "主体展开", "收束/行动召唤"]
+        for i, name in enumerate(section_names):
+            s = transcript_chunks[i * section_size : (i + 1) * section_size]
+            txt = " ".join(x.get("text", "") for x in s).strip()[:280] or "内容不足"
+            script_sections.append(
+                {
+                    "section": name,
+                    "text": txt,
+                    "evidence": _normalize_evidence(
+                        [
+                            {
+                                "type": "transcript_span",
+                                "source": s[0].get("source", "") if s else "",
+                                "locator": f"line:{s[0].get('line', '')}" if s else "",
+                                "snippet": txt,
+                                "confidence": 0.7,
+                            }
+                        ]
+                    ),
+                }
+            )
+    else:
+        script_sections = [
+            {
+                "section": "结构识别",
+                "text": "缺少可用字幕/口播文本，无法完整切分脚本结构。",
+                "evidence": evidence_pool[:1],
+            }
+        ]
 
     source_text = _merge_text(
         post_content.get("title", ""),
@@ -816,11 +593,11 @@ def _fallback_report(signals: Dict[str, Any]) -> Dict[str, Any]:
     elif ocr_hits:
         cover_title_text = str(ocr_hits[0].get("text", "")).splitlines()[0][:80]
 
-    voiceover = combined_text[:700] if combined_text else "none（未提取到可用口播文本）"
-    narrative_pattern = _build_video_narrative_pattern(source_text, evidence_pool, script_sections)
+    voiceover = combined_text[:500] if combined_text else "none（未提取到可用口播文本）"
+    narrative_pattern = _build_video_narrative_pattern(source_text, evidence_pool)
     production_methods = _build_video_production_methods(source_text, evidence_pool, visual_specs)
-    virality_drivers = _build_video_virality_drivers(hook_text, source_text, evidence_pool, script_sections)
-    adaptation_ideas = _build_video_adaptation_ideas(source_text, script_sections)
+    virality_drivers = _build_video_virality_drivers(hook_text, source_text, evidence_pool)
+    adaptation_ideas = _build_video_adaptation_ideas(source_text)
 
     report = {
         "meta": {

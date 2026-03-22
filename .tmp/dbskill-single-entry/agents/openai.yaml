@@ -1,0 +1,4 @@
+interface:
+  display_name: "DBSkill"
+  short_description: "Single entry for dontbesilent business diagnosis"
+  default_prompt: "Use $dbskill to route this business problem and run the right internal workflow."
